@@ -31,7 +31,7 @@ const Navbar = () => {
     }
     return (
         <div>
-            <nav className='flex justify-between items-center py-8 px-5 shadow-lg'>
+            <nav className='flex justify-between items-center py-8 px-5 shadow'>
                 <motion.div
                     whileTap={{ scale: 0.98 }}
                     whileHover={{ scale: 1.02 }}
@@ -67,12 +67,22 @@ const Navbar = () => {
                     initial={{ x: 100 }}
                     animate={{ x: 0 }}
 
-                    className='absolute justify-center items-center w-full mt-5 flex  flex-col gap-5 lg:hidden'>
+                    className='absolute top-0 w-full bg-orange-400  h-screen'>
+                    <motion.div onClick={() => setOpen(!open)}
+                        whileTap={{ scale: 0.8 }}
+                        whileHover={{ scale: 1.2 }}
+                        className='absolute top-2 left-5'>
+                        {
+                            !open ? <FaBars /> : <ImCross className='text-[#1C1F85]' />
+                        }
+                    </motion.div>
+                    <div className='justify-center items-center   flex  flex-col gap-5 lg:hidden z-50 mt-20  text-[#1C1F85]'>
+                        <CustomLink href='/' navItem='Home' className={`${router == '/' && 'text-black text-[18px] font-bold'}`} />
+                        <CustomLink className={`${router == 'about-us' && 'text-black text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
+                        <CustomLink className={`${router == 'Services' && 'text-black text-[18px] font-bold'}`} href='/services' navItem='Services' />
+                        <CustomLink href='/contact-us' navItem='Contact Us' className={`${router == 'contact-us' && 'text-black text-[18px] font-bold'}`} />
+                    </div>
 
-                    <CustomLink href='/' navItem='Home' className={`${router == '/' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
-                    <CustomLink className={`${router == 'about-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
-                    <CustomLink className={`${router == 'Services' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/services' navItem='Services' />
-                    <CustomLink href='/contact-us' navItem='Contact Us' className={`${router == 'contact-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
                 </motion.div>
             }
         </div>

@@ -1,0 +1,34 @@
+{
+    "services": [
+        {
+            "service": "Brand Design",
+            "description": "Create a unique and memorable brand identity for your business, including logo design, brand colors, and visual elements.",
+            "image": "https://example.com/brand_design_image.svg"
+        },
+        {
+            "service": "Digital Marketing",
+            "description": "Promote your business online through strategic digital marketing campaigns, including social media marketing, SEO, and online advertising.",
+            "image": "https://example.com/digital_marketing_image.svg"
+        },
+        {
+            "service": "Domain & Hosting",
+            "description": "Provide domain registration services and reliable hosting solutions to ensure your website is accessible and secure.",
+            "image": "https://example.com/domain_hosting_image.svg"
+        },
+        {
+            "service": "Web Development",
+            "description": "Design and develop responsive and user-friendly websites tailored to your business needs, using the latest web technologies.",
+            "image": "https://example.com/web_development_image.svg"
+        },
+        {
+            "service": "Software Development",
+            "description": "Build custom software solutions to automate processes, enhance efficiency, and meet specific business requirements.",
+            "image": "https://example.com/software_development_image.svg"
+        },
+        {
+            "service": "Cyber Security",
+            "description": "Implement robust cyber security measures to protect your digital assets, including data encryption, threat detection, and secure network configurations.",
+            "image": "https://example.com/cyber_security_image.svg"
+        }
+    ]
+}
