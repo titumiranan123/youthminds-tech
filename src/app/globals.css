@@ -56,3 +56,6 @@
     display: grid !important;
     grid-template-columns: repeat(1fr, 1fr);
 } */
+.ul {
+    list-style: disc !important;
+}

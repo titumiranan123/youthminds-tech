@@ -3,7 +3,7 @@ import headerImg from '../../assets/header.png'
 import Image from 'next/image'
 const Header = () => {
     return (
-        <div className='flex justify-center items-center lg:flex-nowrap flex-wrap h-screen gap-5 bg-[#6eef22] bg-opacity-10 p-8'>
+        <div className='flex justify-center items-center lg:flex-nowrap flex-wrap  gap-5 bg-[#6eef22] bg-opacity-10 p-8'>
             <div className='lg:w-[50%] flex flex-col gap-5'>
                 <h2 className='text-5xl font-bold'>
                     Empowering <span className='text-orange-500'>
