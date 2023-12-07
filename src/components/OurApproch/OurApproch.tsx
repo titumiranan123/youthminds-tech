@@ -6,7 +6,7 @@ const OurApproch = () => {
         <div className='lg:p-10 p-4'>
             <div className='saria flex flex-col  justify-center items-center '>
                 <h2 className='mt-10 font-bold saria text-4xl text-center'>Why We Chosse us</h2>
-                <p className='text-center text-xl'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
+                <p className='text-center text-lg text-slate-600 w-4/5'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
             </div>
             <div className='mt-10 flex justify-center gap-10 lg:flex-nowrap flex-wrap items-center '>
                 <Image className='img-fluid lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
