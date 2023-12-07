@@ -8,7 +8,7 @@ const Footer = () => {
 
             <div className='mt-20 bg-black text-slate-700  bg-opacity-20 p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10'>
                 <div>
-                    <Image className='w-60 h-20 rounded-lg' src={logo} alt='' />
+                    <Image className='w-60 h-20 rounded-lg img-fluid' src={logo} alt='' />
                     <p>Welcome to our website Information <br /> and Technology Company</p>
                     <hr className='border-r-gray-500 h-2 ' />
 

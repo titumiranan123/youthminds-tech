@@ -19,7 +19,7 @@ const Navbar = () => {
         className?: string;
     }
     const router = usePathname()
-    console.log(router)
+
     const CustomLink: React.FC<CustomLinkProps> = ({ navItem, href, className }) => {
         return (
             <Link href={href} >
@@ -41,7 +41,7 @@ const Navbar = () => {
                             src={logo}
                             width={150}
                             height={100}
-                            className='rounded-lg'
+                            className='rounded-lg img-fluid'
                             alt="Picture of the author"
                         />
                     </Link>

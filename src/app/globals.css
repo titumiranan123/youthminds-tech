@@ -59,3 +59,39 @@
 .ul {
     list-style: disc !important;
 }
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+.experts-card {
+    transition: 0.5s;
+    margin-bottom: 25px;
+}
+
+.expert-social {
+
+    height: 100%;
+    padding: 25px 20px;
+    align-items: end;
+    justify-content: center;
+    /* background: linear-gradient(0deg, hsla(33, 100%, 53%, 1) 0%, rgb(212, 255, 227) 100%); */
+    /* background: linear-gradient(176.24deg, rgba(29, 29, 29, 0) 10.39%, rgba(255, 147, 15, 1) 86%); */
+    background: linear-gradient(176.24deg, rgba(29, 29, 29, 0) 10.39%, #1D1D1D 90.62%);
+    /* transform: scaleY(0);
+    transform-origin: bottom; */
+    opacity: 0;
+    transition: 1.2s;
+
+
+}
+
+.expert-social:hover {
+    opacity: 50%;
+}
