@@ -38,7 +38,7 @@ const Footer = () => {
                         <form className='flex justify-center flex-col space-y-1 p-4'>
                             <input type="text" className='border-none px-4  inputcontact ' placeholder='Name' />
                             <input type="text" className='border-none inputcontact' placeholder='Email Address' />
-                            <textarea className='px-4' name="" id="" cols="5" rows="2" placeholder='Message'></textarea>
+                            <textarea className='px-4' name="" id="" placeholder='Message'></textarea>
                             <button className='py-4 border rounded-xl bg-orange-400 hover:bg-orange-500 '>Send</button>
                         </form>
                         <div className='h-4 rounded-xl w-full'></div>
