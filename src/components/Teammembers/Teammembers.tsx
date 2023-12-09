@@ -31,13 +31,27 @@ const Teammembers = () => {
             </div>
             <div className=' mt-10'>
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={1}
                     spaceBetween={30}
                     freeMode={true}
                     pagination={{
                         clickable: true,
                     }}
                     modules={[FreeMode, Pagination]}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                    }}
                     className="mySwiper"
                 >
 

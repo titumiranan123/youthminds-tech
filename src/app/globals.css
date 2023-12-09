@@ -95,3 +95,26 @@ svg {
 .expert-social:hover {
     opacity: 50%;
 }
+
+.footer {
+    background-image: url(../assets/footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+}
+
+.spinner {
+
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

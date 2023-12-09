@@ -1,0 +1,16 @@
+.swiper-pagination-bullets {
+    @apply flex gap-3 justify-center items-center mt-10 mb-10
+}
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    margin-bottom: 70px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

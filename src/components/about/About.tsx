@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import logo from '../../assets/about.jpg'
+import logo from '../../assets/About us YouthMinds Tech.png'
 import { useState } from 'react';
 const About = () => {
     const [Read, setRead] = useState<boolean>(true);

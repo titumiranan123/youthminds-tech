@@ -15,24 +15,38 @@ const OurApproch = () => {
                 <h2 className='mt-10 font-bold saria text-4xl text-center'>Why  Chosse us</h2>
                 <p className='text-center text-lg text-slate-600 w-4/5'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
             </div>
-            <div className='mt-10 flex  gap-10 lg:flex-nowrap flex-wrap  '>
+            <div className='mt-10 flex flex-row-reverse  justify-center items-center  gap-10 lg:flex-nowrap flex-wrap  '>
                 <Image className='img-fluid lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
 
-                <section className="py-12 lg:w-[40rem] flex justify-center items-center">
+                <section className="py-12 w-72  lg:w-[40rem] flex justify-center items-center">
                     <Swiper
-                        slidesPerView={2}
-                        spaceBetween={30}
+                        slidesPerView={1}
+                        spaceBetween={10}
                         loop={true}
                         pagination={{
                             clickable: true,
                         }}
-                        navigation={true}
-                        modules={[Pagination, Navigation]}
+
+                        modules={[Pagination]}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                            },
+                            768: {
+                                slidesPerView: 1,
+                                spaceBetween: 40,
+                            },
+                            1024: {
+                                slidesPerView: 2,
+                                spaceBetween: 50,
+                            },
+                        }}
                         className="mySwiper"
                     >
                         {features.map((feature, index) => (
                             <SwiperSlide key={index}>
-                                <div key={index} className="p-6 bg-white rounded shadow-md">
+                                <div className="lg:p-6 h-96 rounded shadow-md">
                                     <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
                                     <p className="text-gray-700">{feature.description}</p>
                                 </div>

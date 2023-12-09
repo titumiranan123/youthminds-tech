@@ -12,8 +12,10 @@ import svg from '../../assets/web.svg'
 import svg2 from '../../assets/software devloment.svg'
 import svg3 from '../../assets/cyberSecutrity.svg'
 import svg4 from '../../assets/digital marketing.svg'
+import svg5 from '../../assets/hardware.svg'
 
 import Servicescard from './Servicescard';
+
 type serviceType = {
     title: string;
     description: string;
@@ -51,7 +53,8 @@ const services = [
     {
         "title": "Hardware Solution",
         "description": "Need a reliable partner for your hardware needs? Look no further! Our customer-friendly approach means more than just solutions; it's about creating a hardware experience that seamlessly aligns with your goals. We're not just about components and setups; we're your partners in creating a smooth and reliable hardware experience. Let’s collaborate to bring efficiency, innovation, and a touch of user-friendly magic to your technology landscape! ",
-        "tags": "#HardwareSolutions #HardwareInnovation"
+        "tags": "#HardwareSolutions #HardwareInnovation",
+        "svg": svg5
     },
 ]
 const Services = () => {
@@ -59,18 +62,33 @@ const Services = () => {
         <div className='mt-10'>
             <div className='saria flex flex-col justify-center items-center '>
                 <h2 className='mt-10 font-semibold saria text-4xl text-center'>SOLUTION WE OFFER</h2>
-                <p className='text-center text-slate-600 w-1/4 text-lg'>Bring The Revolution With
+                <p className='text-center text-slate-600 lg:w-1/4 text-lg'>Bring The Revolution With
                     The <span className='text-orange-500 '>Diligence</span> Service</p>
+
             </div>
             <div className='mt-10 '>
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={1}
                     spaceBetween={30}
                     freeMode={true}
                     pagination={{
                         clickable: true,
                     }}
                     modules={[FreeMode, Pagination]}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
+                    }}
                     className="mySwiper"
                 >
                     {

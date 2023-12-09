@@ -4,9 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link';
 const Footer = () => {
     return (
-        <>
+        <div className='footer bg-orange-200 bg-opacity-50'>
 
-            <div className='mt-20 bg-black text-slate-700  bg-opacity-20 p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10'>
+            <div className='mt-20 bg-orange-500 text-slate-700  bg-opacity-20 p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10'>
                 <div>
                     <Image className='w-60 h-20 rounded-lg img-fluid' src={logo} alt='' />
                     <p>Welcome to our website Information <br /> and Technology Company</p>
@@ -49,10 +49,10 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='bg-black bg-opacity-40 w-full p-10 text-center'>
-                <p>&copy; Copyright 2023 by  <a href="#" className='hover:text-orange-500 underline'>Youthminds Tech</a> </p>
+            <div className='bg-black w-full p-10 text-center'>
+                <p className='text-white'>&copy; Copyright 2023 by  <a href="#" className='hover:text-orange-500 text-slate-600 underline'>Youthminds Tech</a> </p>
             </div>
-        </>
+        </div>
     );
 };
 

@@ -53,7 +53,7 @@ const reviews = [
         rating: 4,
         review: 'Duis et consequat tellus. Etiam luctus justo at augue luctus, vel laoreet libero ultrices. Nullam vel urna vel elit efficitur tempus.',
     },
-    // Add more reviews as needed
+
 ];
 const Testimonial = () => {
     return (
@@ -64,11 +64,25 @@ const Testimonial = () => {
             </div>
             <div className='mt-10'>
                 <Swiper
-                    slidesPerView={3}
+                    slidesPerView={1}
                     spaceBetween={30}
                     freeMode={true}
                     pagination={{
                         clickable: true,
+                    }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 40,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 50,
+                        },
                     }}
                     modules={[FreeMode, Pagination]}
                     className="mySwiper"

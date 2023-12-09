@@ -1,6 +1,7 @@
 import React from 'react';
 import headerImg from '../../assets/header.png'
 import Image from 'next/image'
+import brain from '../../assets/landing page img.png'
 const Header = () => {
     return (
         <div className='flex justify-center md:mt-10 items-center lg:flex-nowrap flex-wrap  gap-5  bg-opacity-10 lg:p-8 p-4'>
@@ -14,8 +15,9 @@ const Header = () => {
                 </div>
                 <button data-aos="fade-right" className='py-3 px-8 w-1/4 bg-orange-400 hover:bg-orange-600 hover:text-white mt-4 rounded-lg text-xl font-semibold '>Let&apos;s Go</button>
             </div>
-            <div data-aos="zoom-in" className=' lg:w-[50%] '>
+            <div data-aos="zoom-in" className=' lg:w-[50%] relative  '>
                 <Image className='img-fluid' src={headerImg} alt='' />
+                <Image className='spinner h-40 w-40 absolute top-10 right-2/4' src={brain} alt='' />
             </div>
         </div>
     );
