@@ -3,12 +3,13 @@ import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Navbar.css'
-import { FaBars } from 'react-icons/fa'
+import { FaBars, FaFacebookF, FaPinterestP, FaTwitter } from 'react-icons/fa'
 import logo from '../../assets/logo.png'
 import Image from 'next/image'
 import { useState } from 'react'
 import { ImCross } from "react-icons/im";
 import { usePathname } from 'next/navigation'
+import { IoLogoInstagram } from 'react-icons/io5';
 
 
 const Navbar = () => {
@@ -52,6 +53,12 @@ const Navbar = () => {
                     <CustomLink className={`${router == 'about-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
                     <CustomLink className={`${router == 'Services' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/services' navItem='Services' />
                     <CustomLink href='/contact-us' navItem='Contact Us' className={`${router == 'contact-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
+                </div>
+                <div className=' absolute bottom-0 flex w-full   gap-2'>
+                    <li><a href="https://www.facebook.com/"><FaFacebookF className=' text-white text-2xl font-bold' /></a></li>
+                    <li><a href="https://twitter.com/"><FaTwitter className=' text-white text-2xl font-bold' /></a></li>
+                    <li><a href="https://www.pinterest.com/"><FaPinterestP className=' text-white font-bold text-2xl' /></a></li>
+                    <li><a href="https://www.instagram.com/"><IoLogoInstagram className='  text-2xl font-bold rounded-full text-white' /></a></li>
                 </div>
                 <motion.div onClick={() => setOpen(!open)}
                     whileTap={{ scale: 0.8 }}

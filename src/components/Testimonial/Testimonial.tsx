@@ -8,6 +8,53 @@ import 'swiper/css/pagination';
 import './styles.css';
 // import required modules
 import { FreeMode, Pagination } from 'swiper/modules';
+import ReviewCard from './ReviewCard';
+
+const reviews = [
+    {
+        name: 'John Doe',
+        designation: 'Web Developer',
+        image: 'https://placekitten.com/200/200', // Replace with actual image URL
+        rating: 5,
+        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo sed erat imperdiet bibendum. In hac habitasse platea dictumst.',
+    },
+    {
+        name: 'Jane Smith',
+        designation: 'UX Designer',
+        image: 'https://placekitten.com/200/200', // Replace with actual image URL
+        rating: 4,
+        review: 'Duis et consequat tellus. Etiam luctus justo at augue luctus, vel laoreet libero ultrices. Nullam vel urna vel elit efficitur tempus.',
+    },
+    {
+        name: 'John Doe',
+        designation: 'Web Developer',
+        image: 'https://placekitten.com/200/200', // Replace with actual image URL
+        rating: 5,
+        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo sed erat imperdiet bibendum. In hac habitasse platea dictumst.',
+    },
+    {
+        name: 'Jane Smith',
+        designation: 'UX Designer',
+        image: 'https://placekitten.com/200/200', // Replace with actual image URL
+        rating: 4,
+        review: 'Duis et consequat tellus. Etiam luctus justo at augue luctus, vel laoreet libero ultrices. Nullam vel urna vel elit efficitur tempus.',
+    },
+    {
+        name: 'John Doe',
+        designation: 'Web Developer',
+        image: 'https://placekitten.com/200/200', // Replace with actual image URL
+        rating: 5,
+        review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo sed erat imperdiet bibendum. In hac habitasse platea dictumst.',
+    },
+    {
+        name: 'Jane Smith',
+        designation: 'UX Designer',
+        image: 'https://placekitten.com/200/200', // Replace with actual image URL
+        rating: 4,
+        review: 'Duis et consequat tellus. Etiam luctus justo at augue luctus, vel laoreet libero ultrices. Nullam vel urna vel elit efficitur tempus.',
+    },
+    // Add more reviews as needed
+];
 const Testimonial = () => {
     return (
         <div>
@@ -26,15 +73,12 @@ const Testimonial = () => {
                     modules={[FreeMode, Pagination]}
                     className="mySwiper"
                 >
-                    <SwiperSlide>Slide 1</SwiperSlide>
-                    <SwiperSlide>Slide 2</SwiperSlide>
-                    <SwiperSlide>Slide 3</SwiperSlide>
-                    <SwiperSlide>Slide 4</SwiperSlide>
-                    <SwiperSlide>Slide 5</SwiperSlide>
-                    <SwiperSlide>Slide 6</SwiperSlide>
-                    <SwiperSlide>Slide 7</SwiperSlide>
-                    <SwiperSlide>Slide 8</SwiperSlide>
-                    <SwiperSlide>Slide 9</SwiperSlide>
+
+                    {reviews.map((review, index) => (
+                        <SwiperSlide key={index}>  <ReviewCard  {...review} /> </SwiperSlide>
+                    ))}
+
+
                 </Swiper>
             </div>
         </div>
