@@ -62,8 +62,8 @@ const Services = () => {
         <div className='mt-10'>
             <div className='saria flex flex-col justify-center items-center '>
                 <h2 className='mt-10 font-semibold saria text-4xl text-center'>SOLUTION WE OFFER</h2>
-                <p className='text-center text-slate-600 lg:w-1/4 text-lg'>Bring The Revolution With
-                    The <span className='text-orange-500 '>Diligence</span> Service</p>
+                <p className='text-center text-slate-600 lg:w-1/4 '>Bring The Revolution With
+                    The Diligence Service</p>
 
             </div>
             <div className='mt-10 '>

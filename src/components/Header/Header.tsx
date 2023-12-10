@@ -13,7 +13,7 @@ const Header = () => {
                     </h2>
                     <p className='w-3/4 mt-4 text-slate-600'> Empowering success through cutting-edge IT solutions. From brand design to cybersecurity, we&apos;re your dedicated partner in the digital era, crafting tailored solutions for your triumph.</p>
                 </div>
-                <button data-aos="fade-right" className='py-3 px-8 w-1/4 bg-orange-400 hover:bg-orange-600 hover:text-white mt-4 rounded-lg text-xl font-semibold '>Let&apos;s Go</button>
+                <button data-aos="fade-right" className='py-3 px-8 lg:w-1/4 w-1/2 bg-orange-400 hover:bg-orange-600 hover:text-white mt-4 rounded-lg text-xl font-semibold '>Let&apos;s Go</button>
             </div>
             <div data-aos="zoom-in" className=' lg:w-[50%] relative  '>
                 <Image className='img-fluid' src={headerImg} alt='' />
