@@ -15,7 +15,7 @@ const OurApproch = () => {
                 <h2 className='mt-10 font-bold saria text-4xl text-center'>Why  Chosse us</h2>
                 <p className='text-center text-lg text-slate-600 w-4/5'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
             </div>
-            <div className='mt-10 flex flex-row-reverse  justify-center items-center  gap-10 lg:flex-nowrap flex-wrap  '>
+            <div className='mt-10 flex   justify-center items-center  gap-10 lg:flex-nowrap flex-wrap  '>
                 <Image className='img-fluid lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
 
                 <section className="py-12 w-72  lg:w-[40rem] flex justify-center items-center">
@@ -46,7 +46,7 @@ const OurApproch = () => {
                     >
                         {features.map((feature, index) => (
                             <SwiperSlide key={index}>
-                                <div className="lg:p-8 h-96 p-4 rounded shadow-md">
+                                <div className="lg:p-8 h-[25rem] p-4 rounded shadow-md">
                                     <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
                                     <p className="text-gray-700">{feature.description}</p>
                                 </div>
