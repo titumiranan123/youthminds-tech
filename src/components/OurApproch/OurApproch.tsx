@@ -46,7 +46,7 @@ const OurApproch = () => {
                     >
                         {features.map((feature, index) => (
                             <SwiperSlide key={index}>
-                                <div className="lg:p-8 h-[25rem] p-4 rounded shadow-md">
+                                <div className="lg:p-8 h-[26rem] p-4 rounded-lg shadow-md ">
                                     <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
                                     <p className="text-gray-700">{feature.description}</p>
                                 </div>

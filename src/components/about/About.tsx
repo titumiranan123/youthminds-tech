@@ -7,9 +7,9 @@ const About = () => {
     return (
         <div className=' p-4 lg:p-10 '>
             <h2 data-aos="fade-in" data-duration='1000' className='text-4xl font-semibold text-center '>About Us</h2>
-            <div className='flex flex-wrap justify-center lg:items-center lg:flex-nowrap'>
-                <div data-aos="fade-up" data-duration='1200' className='lg:w-1/2 md:mt-10 md:mb-10 space-y-2'>
-                    <h1 className='text-2xl font-bold'>Here your digital dreams come to life! We&apos;re not just an IT company; we&apos;re your partners in creating a powerful online presence.</h1>
+            <div className='flex flex-wrap justify-center mt-10 items-center lg:flex-nowrap'>
+                <div data-aos="fade-up" data-duration='1200' className='lg:w-1/2  mt-10 md:mb-10 space-y-2'>
+                    <h1 className='text-2xl font-bold'>Here your digital dreams come to life! We&apos;re not just an IT company; we&apos;re your partners in creating a powerful online presence. </h1>
                     <p className='lg:w-4/5 text-slate-600'>
                         Here your digital dreams come to life! We&apos;re not just an IT company; we&apos;re your partners in creating a powerful online presence. <br />
                         Our design and web experts craft visually striking experiences, ensuring your brand stands out in the crowded online space. Our software solutions are tailored to enhance functionality and efficiency, adapting to the unique requirements of your enterprise. Our team of experts combines artistic flair with technical expertise, creating visually stunning designs and seamlessly functional websites. <span className={`${!Read ? 'hidden' : 'text-xl'}`}>......</span>
@@ -20,7 +20,7 @@ const About = () => {
                         <button className='text-black font-semibold hover:underline ' onClick={() => setRead(!Read)}>{Read ? <> Read More</> : <>Read Less</>}</button>
                     </p>
                 </div>
-                <div data-aos="fade-left" className='lg:w-1/2'>
+                <div data-aos="fade-left" className='lg:w-1/2 '>
                     <Image className='image-fluid' alt='' src={logo} />
                 </div>
             </div>
