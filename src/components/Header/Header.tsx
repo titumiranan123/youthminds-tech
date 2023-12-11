@@ -17,7 +17,7 @@ const Header = () => {
             </div>
             <div data-aos="zoom-in" className=' lg:w-[50%] relative  '>
                 <Image className='img-fluid' src={headerImg} alt='' />
-                <Image className='spinner h-44 w-44 absolute top-10 right-2/4' src={brain} alt='' />
+                <Image className='spinner h-48 w-48 absolute top-10 right-2/4' src={brain} alt='' />
                 {/* <Image className='img-fluid spinner' src={brain} alt='' /> */}
             </div>
         </div>
