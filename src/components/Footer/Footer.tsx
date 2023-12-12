@@ -70,7 +70,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-orange-500 w-full p-10 text-center'>
+            <div className='bg-orange-500 w-full p-2 text-center'>
                 <p className='text-white'>&copy; Copyright 2023 by  <a href="#" className='hover:text-slate-600  underline'>Youthminds Tech</a> </p>
             </div>
         </div>
