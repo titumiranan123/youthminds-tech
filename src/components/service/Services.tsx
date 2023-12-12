@@ -59,10 +59,10 @@ const services = [
 ]
 const Services = () => {
     return (
-        <div className='mt-10'>
+        <div className='mt-12'>
             <div className='saria flex flex-col justify-center items-center '>
-                <h2 className='mt-10 font-semibold saria text-4xl text-center'>SOLUTION WE OFFER</h2>
-                <p className='text-center text-slate-600 lg:w-1/4 mt-5'>Bring The Revolution With
+                <h2 className='mt-10 font-semibold saria text-4xl text-center text-orange-500'>SOLUTION WE OFFER</h2>
+                <p className='text-center text-slate-600 lg:w-1/4 mt-2'>Bring The Revolution With
                     The Diligence Service</p>
 
             </div>

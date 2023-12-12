@@ -10,9 +10,9 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 const OurApproch = () => {
     return (
-        <div className='lg:p-10 p-4 bg-orange-200 bg-opacity-50'>
+        <div className='mt-12 lg:p-10 p-4 bg-orange-200 bg-opacity-50'>
             <div className='saria flex flex-col  justify-center items-center '>
-                <h2 className='mt-10 font-bold saria text-4xl text-center'>Why  Chosse us</h2>
+                <h2 className=' font-bold saria text-4xl text-center text-orange-500'>Why  Chosse us</h2>
                 <p className='text-center text-lg text-slate-600 w-4/5'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
             </div>
             <div className='mt-10 flex   justify-center items-center  gap-10 lg:flex-nowrap flex-wrap  '>

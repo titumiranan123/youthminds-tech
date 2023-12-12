@@ -8,9 +8,9 @@ import { motion } from 'framer-motion'
 import { BsFacebook } from 'react-icons/bs';
 const Footer = () => {
     return (
-        <div className='footer bg-orange-200 bg-opacity-50'>
+        <div className='footer bg-orange-500 bg-opacity-50  mt-12  '>
 
-            <div className='mt-20 bg-orange-500 text-slate-700  bg-opacity-20 p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10'>
+            <div className=' text-slate-700  bg-opacity-20 p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10'>
                 <div>
                     <Image className='w-60 h-20 rounded-lg img-fluid' src={logo} alt='' />
                     <p className='mt-2'>Welcome to our website Information <br /> and Technology Company</p>
@@ -49,7 +49,6 @@ const Footer = () => {
                         <Link href='/services'> Services</Link>
                         <Link href='/contact'> Contact</Link>
                     </div>
-
                 </div>
                 <div className='space-y-4 '>
                     <h2 className='text-xl font-semibold'>Contact </h2>
@@ -59,7 +58,6 @@ const Footer = () => {
                         <a className='text-orange-500 underline' href="mailto:youthmindstech@gmail.com">youthmindstech@gmail.com</a>
                     </div>
                 </div>
-
                 <div>
                     <h2 className='text-xl font-semibold'>Sign up for newsletter </h2>
                     <div className=''>
@@ -67,18 +65,13 @@ const Footer = () => {
                             <input type="text" className='border-none px-4  inputcontact ' placeholder='Name' />
                             <input type="text" className='border-none inputcontact' placeholder='Email Address' />
                             <textarea className='px-4' name="" id="" placeholder='Message'></textarea>
-                            <button className='py-4 border rounded-xl bg-orange-400 hover:bg-orange-500 '>Send</button>
+                            <button className='py-4 border rounded-xl bg-orange-400 hover:bg-orange-500 font-semibold hover:text-white '>Send</button>
                         </form>
-                        <div className='h-4 rounded-xl w-full'></div>
-                        <div>
-
-                        </div>
                     </div>
                 </div>
-
             </div>
-            <div className='bg-black w-full p-10 text-center'>
-                <p className='text-white'>&copy; Copyright 2023 by  <a href="#" className='hover:text-orange-500 text-slate-600 underline'>Youthminds Tech</a> </p>
+            <div className='bg-orange-500 w-full p-10 text-center'>
+                <p className='text-white'>&copy; Copyright 2023 by  <a href="#" className='hover:text-slate-600  underline'>Youthminds Tech</a> </p>
             </div>
         </div>
     );

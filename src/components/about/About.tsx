@@ -5,9 +5,9 @@ import { useState } from 'react';
 const About = () => {
     const [Read, setRead] = useState<boolean>(true);
     return (
-        <div className=' p-4 lg:p-10 '>
+        <div className='mt-12 p-4 '>
             <h2 data-aos="fade-in" data-duration='1000' className='text-4xl font-semibold text-center '>About Us</h2>
-            <div className='flex flex-wrap justify-center mt-10 items-center lg:flex-nowrap'>
+            <div className='flex flex-wrap justify-center mt-5 items-center lg:flex-nowrap'>
                 <div data-aos="fade-up" data-duration='1200' className='lg:w-1/2  mt-10 md:mb-10 space-y-2'>
                     <h1 className='text-2xl font-bold'>Here your digital dreams come to life! We&apos;re not just an IT company; we&apos;re your partners in creating a powerful online presence. </h1>
                     <p className='lg:w-4/5 text-slate-600'>

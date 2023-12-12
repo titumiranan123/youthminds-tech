@@ -7,7 +7,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import './styles.css';
 // import required modules
-import { FreeMode, Pagination } from 'swiper/modules';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 import ReviewCard from './ReviewCard';
 
 const reviews = [
@@ -57,9 +57,9 @@ const reviews = [
 ];
 const Testimonial = () => {
     return (
-        <div>
+        <div className='mt-12'>
             <div className='saria flex flex-col justify-center items-center '>
-                <h2 className=' font-bold saria text-4xl text-center'>Testimonials</h2>
+                <h2 className=' font-bold saria text-4xl text-center text-orange-500'>TESTIMONIALS</h2>
                 <p className='text-center text-lg w-3/5 mt-4 text-slate-600'>Services are professional offerings provided by businesses to meet specific needs or solve problems for their customers. Services can range from your budget.</p>
             </div>
             <div className='mt-20'>
@@ -84,8 +84,12 @@ const Testimonial = () => {
                             spaceBetween: 50,
                         },
                     }}
-                    modules={[FreeMode, Pagination]}
+                    modules={[FreeMode, Pagination, Autoplay]}
                     className="mySwiper"
+                    autoplay={{
+                        delay: 1500,
+                        disableOnInteraction: false,
+                    }}
                 >
 
                     {reviews.map((review, index) => (
