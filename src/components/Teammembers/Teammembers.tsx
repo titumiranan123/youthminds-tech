@@ -27,7 +27,7 @@ const Teammembers = () => {
         <div className='space-y-5 mt-10  '>
             <div className='saria flex flex-col  justify-center items-center mb-10'>
                 <h2 className='mt-10 font-bold saria text-4xl text-center'>Team Members </h2>
-                <p className='text-center text-lg w-3/4 text-slate-600'>Services are professional offerings provided by businesses to meet specific needs or solve problems for their customers. Services can range from your budget.</p>
+                <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Services are professional offerings provided by businesses to meet specific needs or solve problems for their customers. Services can range from your budget.</p>
             </div>
             <div className=' mt-10'>
                 <Swiper
