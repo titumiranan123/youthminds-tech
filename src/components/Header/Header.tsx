@@ -4,7 +4,7 @@ import Image from 'next/image'
 import brain from '../../assets/landingpic-1.png'
 const Header = () => {
     return (
-        <div className='flex justify-center md:mt-10 items-center lg:flex-nowrap flex-wrap  gap-5  bg-opacity-10 lg:p-8 p-4'>
+        <div className='flex justify-center md:mt-10 items-center lg:flex-nowrap flex-wrap  gap-6  bg-opacity-10 lg:p-8 p-4'>
             <div className='lg:w-[50%]  flex flex-col gap-5'>
                 <div data-aos="fade-down">
                     <h2 className='text-5xl font-bold'>
@@ -17,7 +17,7 @@ const Header = () => {
             </div>
             <div data-aos="zoom-in" className=' lg:w-[50%] relative  '>
                 <Image className='img-fluid' src={headerImg} alt='' />
-                <Image className='spinner h-48 w-48 absolute top-[11rem] right-[35%]' src={brain} alt='' />
+                <Image className='spinner md:h-48 md:w-48 h-36 w-36 absolute md:top-[11rem] md:right-[35%] top-24 right-[30%]' src={brain} alt='' />
                 {/* <Image className='img-fluid spinner' src={brain} alt='' /> */}
             </div>
         </div>
