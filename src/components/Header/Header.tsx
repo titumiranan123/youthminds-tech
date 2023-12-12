@@ -19,7 +19,7 @@ const Header = () => {
                 <Image className='img-fluid' src={headerImg} alt='' />
                 <Image className=' md:h-48 md:w-48 h-36 w-36 absolute md:top-[11rem] md:right-[35%] top-24 right-[30%]' src={brain} alt='' />
                 {/* <Image className='img-fluid spinner' src={brain} alt='' /> */}
-                <div className='spinner img-fluid  md:h-[30rem] md:w-[29rem] h-[20rem] w-[20rem] absolute md:top-[3rem] md:right-[15%] top-0 right-[40%] border border-orange-500'></div>
+                <div className='spinner img-fluid  md:h-[30rem] md:w-[29rem]  absolute md:top-[3rem] md:right-[15%]  border  border-orange-500'></div>
             </div>
         </div>
     );
