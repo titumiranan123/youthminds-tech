@@ -2,6 +2,10 @@ import React from 'react';
 import logo from '../../assets/logo.png'
 import Image from 'next/image'
 import Link from 'next/link';
+import { GrLinkedin } from 'react-icons/gr';
+import { AiFillTwitterCircle } from 'react-icons/ai';
+import { motion } from 'framer-motion'
+import { BsFacebook } from 'react-icons/bs';
 const Footer = () => {
     return (
         <div className='footer bg-orange-200 bg-opacity-50'>
@@ -9,14 +13,38 @@ const Footer = () => {
             <div className='mt-20 bg-orange-500 text-slate-700  bg-opacity-20 p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10'>
                 <div>
                     <Image className='w-60 h-20 rounded-lg img-fluid' src={logo} alt='' />
-                    <p>Welcome to our website Information <br /> and Technology Company</p>
-                    <hr className='border-r-gray-500 h-2 ' />
+                    <p className='mt-2'>Welcome to our website Information <br /> and Technology Company</p>
+                    <hr className='border-r-gray-500 h-2 mt-2' />
+                    <div className='flex  items-center gap-4'>
+                        <motion.li className='list-none duration-100 text-black mt-2'
+                            whileHover={{ scale: 1.1, y: -3 }}
+                            whileTap={{ scale: 0.8, y: 0 }}
+                        >
+                            <BsFacebook className='text-2xl' />
+                        </motion.li>
+                        <motion.li className='list-none duration-100'
+                            whileHover={{ scale: 1.1, y: -3 }}
+                            whileTap={{ scale: 0.8 }}
+                        >
+                            <AiFillTwitterCircle className='text-3xl text-black mt-2' />
+                        </motion.li>
+                        <motion.li className='list-none duration-100'
+                            whileHover={{ scale: 1.1, y: -3 }}
+                            whileTap={{ scale: 0.8 }}
+                        >
+                            <GrLinkedin className='text-2xl text-black mt-2' />
+                        </motion.li>
+
+
+                    </div>
 
                 </div>
                 <div className='space-y-2'>
                     <p className='text-xl font-semibold'>Explore</p>
                     <div className='flex flex-col gap-3'>
-                        <Link href='/'> Home </Link>
+                        <motion.li className='list-none '
+                            whileTap={{ scale: 1.1 }}
+                        ><Link href='/'> Home </Link></motion.li>
                         <Link href='/about'> Abouts</Link>
                         <Link href='/services'> Services</Link>
                         <Link href='/contact'> Contact</Link>

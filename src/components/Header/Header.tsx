@@ -1,7 +1,7 @@
 import React from 'react';
-import headerImg from '../../assets/header.png'
+import headerImg from '../../assets/landingpic-2.png'
 import Image from 'next/image'
-import brain from '../../assets/landing page img.png'
+import brain from '../../assets/landingpic-1.png'
 const Header = () => {
     return (
         <div className='flex justify-center md:mt-10 items-center lg:flex-nowrap flex-wrap  gap-5  bg-opacity-10 lg:p-8 p-4'>
@@ -17,7 +17,7 @@ const Header = () => {
             </div>
             <div data-aos="zoom-in" className=' lg:w-[50%] relative  '>
                 <Image className='img-fluid' src={headerImg} alt='' />
-                <Image className='spinner h-48 w-48 absolute top-10 right-2/4' src={brain} alt='' />
+                <Image className='spinner h-48 w-48 absolute top-[11rem] right-[35%]' src={brain} alt='' />
                 {/* <Image className='img-fluid spinner' src={brain} alt='' /> */}
             </div>
         </div>

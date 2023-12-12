@@ -3,14 +3,15 @@ import Link from 'next/link';
 import React from 'react';
 import { motion } from 'framer-motion';
 import './Navbar.css'
-import { FaBars, FaFacebookF, FaPinterestP, FaTwitter } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 import logo from '../../assets/logo.png'
 import Image from 'next/image'
 import { useState } from 'react'
 import { ImCross } from "react-icons/im";
 import { usePathname } from 'next/navigation'
-import { IoLogoInstagram } from 'react-icons/io5';
-
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { BsFacebook } from "react-icons/bs";
+import { GrLinkedin } from "react-icons/gr";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
@@ -48,18 +49,34 @@ const Navbar = () => {
                     </Link>
                 </motion.div>
                 <div className='lg:flex gap-4 hidden'>
-
                     <CustomLink href='/' navItem='Home' className={`${router == '/' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
                     <CustomLink className={`${router == 'about-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
                     <CustomLink className={`${router == 'Services' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/services' navItem='Services' />
                     <CustomLink href='/contact-us' navItem='Contact Us' className={`${router == 'contact-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
                 </div>
-                {/* <div className=' absolute bottom-0 flex w-full   gap-2'>
-                    <li><a href="https://www.facebook.com/"><FaFacebookF className=' text-white text-2xl font-bold' /></a></li>
-                    <li><a href="https://twitter.com/"><FaTwitter className=' text-white text-2xl font-bold' /></a></li>
-                    <li><a href="https://www.pinterest.com/"><FaPinterestP className=' text-white font-bold text-2xl' /></a></li>
-                    <li><a href="https://www.instagram.com/"><IoLogoInstagram className='  text-2xl font-bold rounded-full text-white' /></a></li>
-                </div> */}
+                <div className='lg:flex justify-center items-center gap-4 hidden'>
+                    <motion.li className='list-none duration-100 text-orange-500'
+                        whileHover={{ scale: 1.1, y: -3 }}
+                        whileTap={{ scale: 0.8, y: 0 }}
+                    >
+                        <BsFacebook className='text-2xl' />
+                    </motion.li>
+                    <motion.li className='list-none duration-100'
+                        whileHover={{ scale: 1.1, y: -3 }}
+                        whileTap={{ scale: 0.8 }}
+                    >
+                        <AiFillTwitterCircle className='text-3xl text-orange-500' />
+                    </motion.li>
+                    <motion.li className='list-none duration-100'
+                        whileHover={{ scale: 1.1, y: -3 }}
+                        whileTap={{ scale: 0.8 }}
+                    >
+                        <GrLinkedin className='text-2xl text-orange-500' />
+                    </motion.li>
+
+
+                </div>
+
                 <motion.div onClick={() => setOpen(!open)}
                     whileTap={{ scale: 0.8 }}
                     whileHover={{ scale: 1.2 }}
@@ -88,6 +105,30 @@ const Navbar = () => {
                         <CustomLink className={`${router == 'about-us' && 'text-black text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
                         <CustomLink className={`${router == 'Services' && 'text-black text-[18px] font-bold'}`} href='/services' navItem='Services' />
                         <CustomLink href='/contact-us' navItem='Contact Us' className={`${router == 'contact-us' && 'text-black text-[18px] font-bold'}`} />
+                        <br />
+
+                        <div className='flex justify-center items-center gap-4'>
+                            <motion.li className='list-none duration-100 text-black'
+                                whileHover={{ scale: 1.1, y: -3 }}
+                                whileTap={{ scale: 0.8, y: 0 }}
+                            >
+                                <BsFacebook className='text-2xl' />
+                            </motion.li>
+                            <motion.li className='list-none duration-100'
+                                whileHover={{ scale: 1.1, y: -3 }}
+                                whileTap={{ scale: 0.8 }}
+                            >
+                                <AiFillTwitterCircle className='text-3xl text-black' />
+                            </motion.li>
+                            <motion.li className='list-none duration-100'
+                                whileHover={{ scale: 1.1, y: -3 }}
+                                whileTap={{ scale: 0.8 }}
+                            >
+                                <GrLinkedin className='text-2xl text-black' />
+                            </motion.li>
+
+
+                        </div>
                     </div>
 
                 </motion.div>
