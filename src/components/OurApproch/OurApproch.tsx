@@ -15,11 +15,11 @@ const OurApproch = () => {
                 <h2 className=' font-bold saria text-4xl text-center text-orange-500'>Why  Chosse us</h2>
                 <p className='text-center text-lg text-slate-600 w-4/5'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
             </div>
-            <div className='mt-10 flex   justify-center items-center  gap-10 lg:flex-nowrap flex-wrap  '>
+            <div className='mt-10 flex   justify-around items-center  gap-10 lg:flex-nowrap flex-wrap  '>
                 <Image className='img-fluid lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
 
-                <section className="py-12 w-72  lg:w-[40rem] flex justify-center items-center">
-                    <Swiper
+                <section className="-mt-10 ">
+                    {/* <Swiper
                         slidesPerView={1}
                         spaceBetween={10}
                         loop={true}
@@ -53,7 +53,12 @@ const OurApproch = () => {
                             </SwiperSlide>
                         ))}
 
-                    </Swiper>
+                    </Swiper> */}
+                    <ul>
+                        {
+                            features.map((feature, index) => <li className='list-disc hover:text-orange-500 mt-2 text-2xl ' key={index}>{feature.title}</li>)
+                        }
+                    </ul>
                 </section>
             </div>
         </div >

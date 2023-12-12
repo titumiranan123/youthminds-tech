@@ -11,6 +11,7 @@ import { FreeMode, Pagination } from 'swiper/modules';
 import svg from '../../assets/web.svg'
 import svg2 from '../../assets/software devloment.svg'
 import svg3 from '../../assets/cyberSecutrity.svg'
+import svg6 from '../../assets/graphics.svg'
 import svg4 from '../../assets/digital marketing.svg'
 import svg5 from '../../assets/hardware.svg'
 
@@ -35,7 +36,7 @@ const services = [
         "title": "Graphics Design",
         "description": "Where your vision meets our creativity! Our friendly team is here to transform your ideas into stunning visuals that truly reflect your brand. From logos to marketing materials, we've got your back. Let's make your brand look and feel amazing together! ",
         "tags": "#DesigningDreams #DesignExcellence",
-        "svg": svg2
+        "svg": svg6
 
     },
     {
