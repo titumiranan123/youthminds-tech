@@ -9,7 +9,7 @@ const State = () => {
         <div className='mt-12  bg-opacity-30  '>
             <div className='flex flex-col justify-center items-center'>
                 <h1 className='text-4xl font-semibold saria text-orange-500'>OUR WORKS</h1>
-                <p className='text-center text-lg w-3/4  text-slate-600'>Maecenas euismod viverra purus, volutpat posuere mauris tristique quisokaft.</p>
+                <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Maecenas euismod viverra purus, volutpat posuere mauris tristique quisokaft.</p>
             </div>
             <div className='grid bg-orange-500   bg-opacity-30 p-10 lg:grid-cols-3  md:grid-cols-2 grid-cols-1 mt-10  gap-4'>
 
