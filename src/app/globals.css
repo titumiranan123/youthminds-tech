@@ -115,7 +115,7 @@ svg {
 }
 
 .spinner {
-    border-radius: 50%;
+
     animation: spin 5s linear infinite;
 }
 
