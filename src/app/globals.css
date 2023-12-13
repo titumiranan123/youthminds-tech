@@ -18,6 +18,17 @@
     font-family: 'Saira';
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+
 .inputcontact {
 
     color: rgba(0, 0, 0, .87);
@@ -104,7 +115,6 @@ svg {
 }
 
 .spinner {
-
     border-radius: 50%;
     animation: spin 5s linear infinite;
 }
@@ -117,4 +127,17 @@ svg {
     100% {
         transform: rotate(360deg);
     }
+}
+
+.gradient-bg {
+    background: radial-gradient(circle at top right, rgba(0, 6, 50, 0.4), transparent);
+    height: 700px;
+    width: 100vh;
+}
+
+.header {
+    background-image: url("../assets/hero.png");
+    background: no-repeat;
+    background-size: cover;
+    /* background: #1D1D1D; */
 }

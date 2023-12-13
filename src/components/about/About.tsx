@@ -7,8 +7,8 @@ const About = () => {
     return (
         <div className='mt-24 p-4 '>
             <h2 data-aos="fade-in" data-duration='1000' className='text-4xl font-semibold text-center text-orange-500 '>ABOUT US</h2>
-            <div className='flex flex-wrap justify-center mt-5 items-center lg:flex-nowrap'>
-                <div data-aos="fade-up" data-duration='1200' className='lg:w-1/2  mt-10 md:mb-10 space-y-2'>
+            <div className='flex -mt-5 flex-wrap justify-center  items-center lg:flex-nowrap'>
+                <div data-aos="fade-up" data-duration='1200' className='lg:w-1/2   md:mb-10  space-y-2'>
                     <h1 className='text-2xl font-bold'>Here your digital dreams come to life! We&apos;re not just an IT company; we&apos;re your partners in creating a powerful online presence. </h1>
                     <p className='lg:w-4/5 text-slate-600'>
                         Here your digital dreams come to life! We&apos;re not just an IT company; we&apos;re your partners in creating a powerful online presence. <br />

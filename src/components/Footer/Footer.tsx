@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className='footer bg-orange-500 bg-opacity-50  mt-12  '>
 
-            <div className=' text-slate-700  bg-opacity-20 p-10 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10'>
+            <div className=' text-slate-700  bg-opacity-20 p-5 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
                 <div>
                     <Image className='w-60 h-20 rounded-lg img-fluid' src={logo} alt='' />
                     <p className='mt-2'>Welcome to our website Information <br /> and Technology Company</p>
@@ -39,9 +39,9 @@ const Footer = () => {
                     </div>
 
                 </div>
-                <div className='space-y-2'>
+                <div className='space-y-2 flex  items-center flex-col'>
                     <p className='text-xl font-semibold'>Explore</p>
-                    <div className='flex flex-col gap-3'>
+                    <div className='flex flex-col gap-3 '>
                         <motion.li className='list-none '
                             whileTap={{ scale: 1.1 }}
                         ><Link href='/'> Home </Link></motion.li>

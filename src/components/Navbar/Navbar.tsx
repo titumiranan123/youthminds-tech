@@ -33,7 +33,7 @@ const Navbar = () => {
     }
     return (
         <div>
-            <nav className='flex justify-between items-center py-8 px-5 shadow'>
+            <nav className='flex justify-between items-center bg-[#010624] text-white py-8 px-5 shadow'>
                 <motion.div
                     whileTap={{ scale: 0.98 }}
                     whileHover={{ scale: 1.02 }}
