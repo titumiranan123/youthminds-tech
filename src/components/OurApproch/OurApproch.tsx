@@ -12,7 +12,7 @@ const OurApproch = () => {
     return (
         <div className='mt-12 lg:p-10 p-4 bg-orange-200 bg-opacity-50'>
             <div className='saria flex flex-col  justify-center items-center '>
-                <h2 className=' font-bold saria text-4xl text-center text-orange-500'>Why  Chosse us</h2>
+                <h2 className=' font-bold saria text-4xl text-center text-orange-500 uppercase'>Why  Chosse us</h2>
                 <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
             </div>
             <div className='mt-10 flex   justify-around items-center  gap-10 lg:flex-nowrap flex-wrap  '>
@@ -54,7 +54,7 @@ const OurApproch = () => {
                         ))}
 
                     </Swiper> */}
-                    <ul className='grid grid-cols-2'>
+                    <ul className='grid grid-cols-2 gap-2'>
                         {
                             features.map((feature, index) => (
                                 <li
@@ -77,6 +77,10 @@ const features = [
         "description": "Need assistance? Our customer support is always ready to help. Whether it's a question about design elements, website functionality, software features, or cybersecurity concerns, our friendly support team is just a message or call away."
     },
     {
+        "title": "Celebrating Success Together",
+        "description": " Your success is our success. We celebrate milestones and achievements with you, fostering a collaborative partnership that goes beyond transactions. Your journey with Youthminds TECH is not just about services; it's about shared victories and growth."
+    },
+    {
         "title": "Educational Resources",
         "description": "We believe in empowering our clients. That's why we provide educational resources and insights into the world of digital technology. Understanding the 'why' and 'how' behind our services allows you to actively engage in shaping your digital journey."
     },
@@ -84,10 +88,6 @@ const features = [
         "title": "Flexible Packages",
         "description": "Our services are designed to fit your business, not the other way around. Choose from flexible packages that cater to your immediate needs while allowing room for scalability as your business grows. No hidden fees, just straightforward solutions."
     },
-
-
-
-
     {
         "title": "Feedback Integration",
         "description": "Your feedback matters. We actively seek and integrate your input throughout the process. Your insights guide our design iterations, software updates, and overall approach to ensure the end result aligns perfectly with your expectations."
