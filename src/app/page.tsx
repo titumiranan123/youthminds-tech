@@ -3,7 +3,7 @@ import Footer from '@/components/Footer/Footer'
 import Header from '@/components/Header/Header'
 import Navbar from '@/components/Navbar/Navbar'
 import OurApproch from '@/components/OurApproch/OurApproch'
-import State from '@/components/State/State'
+
 import Teammembers from '@/components/Teammembers/Teammembers'
 import Testimonial from '@/components/Testimonial/Testimonial'
 import About from '@/components/about/About'
