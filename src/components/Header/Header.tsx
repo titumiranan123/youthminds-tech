@@ -5,8 +5,7 @@ import award from '../../assets/awards.svg'
 import headerImg2 from '../../assets/hero-image.png'
 import headerImg from '../../assets/circle2.png'
 import Image from 'next/image'
-import Statecard from './Statecard';
-
+import CountUp from 'react-countup';
 
 
 const Header = () => {
@@ -38,8 +37,6 @@ const Header = () => {
             </div>
             <div className='mt-12 absolute -bottom-40 left-[4%]  bg-opacity-30  '>
                 <div className='grid    p-10 lg:grid-cols-3  md:grid-cols-2 grid-cols-1 mt-10  gap-4'>
-
-                    {/* <Statecard logo={years} amount={12} heading=' Years' title='Working With Passion' /> */}
                     <Statecard logo={project} amount={12} heading=' Porjects' title='Working With Passion' />
                     <Statecard logo={customer} amount={12} heading=' Customers' title='Working With Passion' />
                     <Statecard logo={award} amount={12} heading=' Awards' title='Working With Passion' />
@@ -50,3 +47,25 @@ const Header = () => {
 };
 
 export default Header;
+
+type propType = {
+    logo: string;
+    heading: string;
+    title: string;
+    amount: number;
+}
+const Statecard: React.FC<propType> = ({ logo, heading, title, amount }) => {
+    return (
+        <div className='flex justify-center  border rounded-bl-3xl rounded-tr-3xl bg-orange-200 bg-opacity-100 w-96  p-5 items-center flex-col gap-5'>
+            <Image src={logo} alt='' />
+            <div className='flex flex-col gap-2'>
+                <h2 className='text-black font-bold text-4xl flex flex-col justify-center items-center'>
+                    {
+                        <CountUp end={amount} />
+                    }
+                    {heading}</h2>
+                <p className='saria text-center'>{title}</p>
+            </div>
+        </div>
+    );
+};
