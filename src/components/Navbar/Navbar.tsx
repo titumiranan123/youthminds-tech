@@ -12,28 +12,35 @@ import { usePathname } from 'next/navigation'
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsFacebook } from "react-icons/bs";
 import { GrLinkedin } from "react-icons/gr";
-
-const Navbar = () => {
-    const [open, setOpen] = useState(false)
+interface navProp {
+    className: string;
+}
+const Navbar: React.FC<navProp> = ({ className }) => {
+    const [open, setOpen] = useState(false);
+    const router = usePathname();
+    console.log(router)
     interface CustomLinkProps {
         navItem: React.ReactNode;
         href: string;
         className?: string;
     }
-    const router = usePathname()
 
     const CustomLink: React.FC<CustomLinkProps> = ({ navItem, href, className }) => {
+
+        const isActive = router === href;
+
         return (
-            <Link href={href} >
-                <span className={`${className} text-[16px] font-['Open Sans'] navfont animationNav`}>
+            <Link href={href}>
+                <span className={`hover:text-orange-500', 'text-[16px]', 'font-["Open Sans"]', 'navfont', 'animationNav', {
+            'text-[#EC7D21] text-[18px] className ${isActive && 'text-bold text-orange-500'}`}>
                     {navItem}
                 </span>
             </Link>
-        )
+        );
     }
     return (
         <div>
-            <nav className='flex justify-between items-center bg-[#010624] text-white py-8 px-5 shadow'>
+            <nav className={`flex justify-between items-center ${className ? 'className text-black' : 'bg-[#010624] text-white '}   py-8 lg:px-9 md:px-4 shadow`}>
                 <motion.div
                     whileTap={{ scale: 0.98 }}
                     whileHover={{ scale: 1.02 }}

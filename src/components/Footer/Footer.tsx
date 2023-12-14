@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className='footer bg-orange-500 bg-opacity-50  mt-12  '>
 
-            <div className=' text-slate-700  bg-opacity-20 p-5 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
+            <div className=' text-slate-700  bg-opacity-20 pt-8 px-5 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
                 <div>
                     <Image className='w-60 h-20 rounded-lg img-fluid' src={logo} alt='' />
                     <p className='mt-2'>Welcome to our website Information <br /> and Technology Company</p>
@@ -65,7 +65,7 @@ const Footer = () => {
                             <input type="text" className='border-none px-4  inputcontact ' placeholder='Name' />
                             <input type="text" className='border-none inputcontact' placeholder='Email Address' />
                             <textarea className='px-4' name="" id="" placeholder='Message'></textarea>
-                            <button className='py-4 border rounded-xl bg-orange-400 hover:bg-orange-500 font-semibold hover:text-white '>Send</button>
+                            <button className='py-2 border rounded-xl bg-orange-400 hover:bg-orange-500 font-semibold hover:text-white '>Send</button>
                         </form>
                     </div>
                 </div>

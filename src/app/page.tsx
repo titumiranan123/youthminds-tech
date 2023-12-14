@@ -24,13 +24,13 @@ export default function Home() {
   })
 
   return (
-    <main>
-      <Navbar />
+    <main className=''>
+      <Navbar className='' />
       <Header />
       <About />
       <OurApproch />
       <Services />
-      <State />
+
       <Teammembers />
       <Testimonial />
       <Footer />

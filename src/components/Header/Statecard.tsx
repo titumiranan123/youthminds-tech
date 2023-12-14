@@ -10,7 +10,7 @@ type propType = {
 }
 const Statecard: React.FC<propType> = ({ logo, heading, title, amount }) => {
     return (
-        <div className='flex justify-center items-center flex-col gap-5'>
+        <div className='flex justify-center  border rounded-bl-3xl rounded-tr-3xl bg-orange-200 bg-opacity-100 w-96  p-5 items-center flex-col gap-5'>
             <Image src={logo} alt='' />
             <div className='flex flex-col gap-2'>
                 <h2 className='text-black font-bold text-4xl flex flex-col justify-center items-center'>
