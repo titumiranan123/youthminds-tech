@@ -56,8 +56,8 @@ const Statecard: React.FC<propType> = ({ logo, heading, title, amount }) => {
     return (
         <div className='flex justify-center  border rounded-bl-3xl rounded-tr-3xl bg-white border-orange-500 bg-opacity-100 lg:w-96  p-5 items-center flex-col gap-5'>
             <Image src={logo} alt='' />
-            <div className='flex flex-col gap-2'>
-                <h2 className='text-black font-bold text-4xl flex flex-col justify-center items-center'>
+            <div className='flex flex-col gap-2 text-orange-500'>
+                <h2 className=' font-bold text-4xl flex flex-col justify-center items-center'>
                     {
                         <CountUp end={amount} />
                     }
