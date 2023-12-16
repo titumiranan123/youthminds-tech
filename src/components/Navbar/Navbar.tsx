@@ -40,7 +40,7 @@ const Navbar: React.FC<navProp> = ({ className }) => {
     }
     return (
         <div>
-            <nav className={`flex justify-between items-center ${className ? 'className text-black' : 'bg-[#010624] text-white '}   py-8 lg:px-9 md:px-4 shadow`}>
+            <nav className={`flex justify-between items-center ${className ? 'className text-black' : 'bg-[#010624] text-white '}   py-8 lg:px-9 px-4 shadow`}>
                 <motion.div
                     whileTap={{ scale: 0.98 }}
                     whileHover={{ scale: 1.02 }}
