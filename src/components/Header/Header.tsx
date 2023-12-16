@@ -15,7 +15,7 @@ const Header = () => {
                 <div className='flex relative justify-between md:pt-10  pb-10   lg:flex-nowrap flex-wrap  gap-6 md:gap-20  bg-[#000724] text-white lg:p-8 p-4'>
                     <div className='lg:w-[50%] h-full  flex flex-col justify-center gap-5'>
                         <div data-aos="fade-down">
-                            <h2 className='md:text-5xl font-bold text-4xl  md:mt-20 leading-10 '>
+                            <h2 className='md:text-5xl font-bold text-4xl  md:mt-20 lg:mt-24 leading-10 '>
                                 Empowering <span className='text-orange-500 leading-10'>
                                     Digital Excellence ,</span> <br /> One Solution at a Time.
                             </h2>
