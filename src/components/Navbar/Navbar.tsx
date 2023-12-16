@@ -31,7 +31,7 @@ const Navbar: React.FC<navProp> = ({ className }) => {
 
         return (
             <Link href={href}>
-                <span className={`hover:text-orange-500', 'text-[16px]', 'font-["Open Sans"]', 'navfont', 'animationNav', {
+                <span className={` 'text-[16px]', 'font-["Open Sans"]', 'navfont', 'animationNav', {
             'text-[#EC7D21] text-[18px] className ${isActive && 'text-bold text-orange-500'}`}>
                     {navItem}
                 </span>
@@ -39,7 +39,7 @@ const Navbar: React.FC<navProp> = ({ className }) => {
         );
     }
     return (
-        <div>
+        <div className='z-50 '>
             <nav className={`flex justify-between items-center ${className ? 'className text-black' : 'bg-[#010624] text-white '}   py-8 lg:px-9 px-4 shadow`}>
                 <motion.div
                     whileTap={{ scale: 0.98 }}
@@ -56,10 +56,10 @@ const Navbar: React.FC<navProp> = ({ className }) => {
                     </Link>
                 </motion.div>
                 <div className='lg:flex gap-4 hidden'>
-                    <CustomLink href='/' navItem='Home' className={`${router == '/' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
-                    <CustomLink className={`${router == 'about-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
-                    <CustomLink className={`${router == 'Services' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/services' navItem='Services' />
-                    <CustomLink href='/contact-us' navItem='Contact Us' className={`${router == 'contact-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
+                    <CustomLink href='/' navItem='Home' className={`hover:text-orange-500 ${router == '/' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
+                    <CustomLink className={`hover:text-orange-500 ${router == 'about-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
+                    <CustomLink className={`hover:text-orange-500 ${router == 'Services' && 'text-[#EC7D21] text-[18px] font-bold'}`} href='/services' navItem='Services' />
+                    <CustomLink href='/contact-us' navItem='Contact Us' className={`hover:text-orange-500 ${router == 'contact-us' && 'text-[#EC7D21] text-[18px] font-bold'}`} />
                 </div>
                 <div className='lg:flex justify-center items-center gap-4 hidden'>
                     <motion.li className='list-none duration-100 text-orange-500'
@@ -98,7 +98,7 @@ const Navbar: React.FC<navProp> = ({ className }) => {
                     initial={{ x: 100 }}
                     animate={{ x: 0 }}
 
-                    className='absolute top-0 w-full bg-orange-400  h-screen'>
+                    className='absolute top-0 w-full bg-orange-400  z-50 h-screen'>
                     <motion.div onClick={() => setOpen(!open)}
                         whileTap={{ scale: 0.8 }}
                         whileHover={{ scale: 1.2 }}
@@ -107,14 +107,14 @@ const Navbar: React.FC<navProp> = ({ className }) => {
                             !open ? <FaBars /> : <ImCross className='text-[#1C1F85]' />
                         }
                     </motion.div>
-                    <div className='justify-center items-center   flex  flex-col gap-5 lg:hidden z-50 mt-20  text-[#1C1F85]'>
-                        <CustomLink href='/' navItem='Home' className={`${router == '/' && 'text-black text-[18px] font-bold'}`} />
-                        <CustomLink className={`${router == 'about-us' && 'text-black text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
-                        <CustomLink className={`${router == 'Services' && 'text-black text-[18px] font-bold'}`} href='/services' navItem='Services' />
-                        <CustomLink href='/contact-us' navItem='Contact Us' className={`${router == 'contact-us' && 'text-black text-[18px] font-bold'}`} />
+                    <div className='justify-center items-center   flex  flex-col gap-5 lg:hidden z-50 mt-20  '>
+                        <CustomLink href='/' navItem='Home' className={`hover:text-white ${router == '/' && 'text-black text-[18px] font-bold'}`} />
+                        <CustomLink className={`hover:text-white ${router == 'about-us' && 'text-black text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
+                        <CustomLink className={`hover:text-white ${router == 'Services' && 'text-black text-[18px] font-bold'}`} href='/services' navItem='Services' />
+                        <CustomLink href='/contact-us' navItem='Contact Us' className={`hover:text-white ${router == 'contact-us' && 'text-black text-[18px] font-bold'}`} />
                         <br />
 
-                        <div className='flex justify-center items-center gap-4'>
+                        <div className='flex justify-center items-center gap-4 z-50'>
                             <motion.li className='list-none duration-100 text-black'
                                 whileHover={{ scale: 1.1, y: -3 }}
                                 whileTap={{ scale: 0.8, y: 0 }}

@@ -12,11 +12,11 @@ import Footer from '@/components/Footer/Footer'
 
 const Services: React.FC = () => {
     return (
-        <div>
+        <div className='-z-10'>
             <Navbar className='bg-white' />
             <div className='text-center flex justify-center items-center text-4xl font-bold text-black bg-[#EC7D21] bg-opacity-20 h-56'><p>Our Services </p></div>
             <div className='servicers '>
-                <div className='mt-10 grid gap-10 grid-cols-3 '>
+                <div className='mt-10 grid gap-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 '>
 
                     {services.map((service, indx) => <Servicescard key={indx} logo={service.svg} heading={service.title} description={service.description} />)}
 
