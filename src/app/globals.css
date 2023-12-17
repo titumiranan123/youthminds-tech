@@ -138,3 +138,66 @@ svg {
     background-size: cover;
     /* background: #1D1D1D; */
 }
+
+.zoom-in-out {
+    animation: zoomInOut 2s infinite alternate;
+
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+.left-to-right {
+
+    animation: slideLeftToRight 3s infinite alternate;
+}
+
+.slideRighttoLeft {
+
+    animation: slideRighttoLeft 3s infinite alternate;
+}
+
+.uptoDown {
+
+    animation: uptoDown 3s infinite alternate;
+}
+
+@keyframes slideLeftToRight {
+    0% {
+        right: 20%;
+    }
+
+    100% {
+        right: 30%;
+        /* Adjust based on the element's width */
+    }
+}
+
+@keyframes slideRighttoLeft {
+    0% {
+        left: 20%;
+    }
+
+    100% {
+        left: 30%;
+        /* Adjust based on the element's width */
+    }
+}
+
+@keyframes uptoDown {
+    0% {
+        top: 50%;
+    }
+
+    100% {
+        bottom: 60%;
+        /* Adjust based on the element's width */
+    }
+}
