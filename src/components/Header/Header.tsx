@@ -26,9 +26,9 @@ const Header = () => {
                         </div>
                     </div>
 
-                    <div className=' z-10 h-full  flex flex-col justify-center md:gap-5 gap-4 items-center mt-72 lg:ms-8 md:me-16'>
+                    <div className=' z-10 h-full  flex flex-col justify-center md:gap-5 gap-4 items-center mt-72 lg:ms-10 md:me-16'>
                         <div data-aos="fade-down  flex justify-center ">
-                            <h2 className='lg:text-5xl md:text-4xl font-bold text-3xl   md:leading-10 text-center'>
+                            <h2 className='lg:text-5xl md:text-4xl font-bold text-2xl   md:leading-10 text-center'>
                                 Empowering <span className='text-orange-500 md:leading-10'>
                                     Digital Excellence ,</span> <br /> One Solution at a Time.
                             </h2>
@@ -40,8 +40,8 @@ const Header = () => {
 
 
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[10%] top-[20%]' src={cyber} />
-                    <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[20%] bottom-20 slideRighttoLeft' src={digital} />
-                    <Image alt='' className='absolute right-[20%] left-to-right h-30 w-12 bottom-20' src={graphics} />
+                    <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[20%] -bottom-5 slideRighttoLeft' src={digital} />
+                    <Image alt='' className='absolute right-[20%] left-to-right h-30 w-12 -bottom-5' src={graphics} />
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute top-[20%] right-[10%]' src={software} />
                     <Image alt='' className='absolute   h-30 w-12 top-[60%] left-[15%] uptoDown' src={web} />
                     <Image alt='' className='h-30 w-12 uptoDown absolute top-[60%] right-[15%]' src={energy} />
