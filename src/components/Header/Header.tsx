@@ -4,6 +4,8 @@ import customer from '../../assets/customer.svg'
 import award from '../../assets/awards.svg'
 import brain from '../../assets/brain2.png'
 import headerImg from '../../assets/circle2.png'
+import webdesing from '../../assets/web design.png'
+import webdevelopment from '../../assets/web development.png'
 import Image from 'next/image'
 import CountUp from 'react-countup';
 import cyber from '../../assets/Youthminds service name icon/cyber security.png'
@@ -56,17 +58,18 @@ const Header = () => {
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[18%] top-[2%]' src={cpu} />
                     <Image alt='' className='h-30 w-20  absolute left-[18%] opacity-30 top-[12%]' src={hardware} />
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute top-[2%] right-[18%]' src={vector} />
+                    <Image alt='' className='h-30 w-20 opacity-30 absolute top-[12%] right-[18%]' src={graphics1} />
 
                     <Image alt='' className='h-30 w-12  absolute left-[20%] -bottom-5 slideRighttoLeft' src={digital} />
                     <Image alt='' className='h-35 w-20  absolute left-[20%] -bottom-9 slideRighttoLeft opacity-30' src={digital1} />
 
                     <Image alt='' className='absolute right-[20%] left-to-right  h-30 w-12 -bottom-5' src={graphics} />
-                    <Image alt='' className='absolute right-[15%] left-to-right  h-30 w-20 -bottom-10 opacity-30' src={graphics1} />
+                    <Image alt='' className='absolute right-[15%] left-to-right  h-30 w-20 -bottom-10 opacity-30' src={webdesing} />
 
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute top-[20%] right-[10%]' src={software} />
                     <Image alt='' className='h-30 w-20 opacity-30 absolute top-[30%] right-[10%]' src={software1} />
                     <Image alt='' className='absolute   h-30 w-12 top-[60%] left-[15%] uptoDown' src={web} />
-                    <Image alt='' className='absolute   h-30 w-20 opacity-30 top-[68%] left-[15%] uptoDown' src={websolution} />
+                    <Image alt='' className='absolute   h-30 w-20 opacity-30 top-[68%] left-[15%] uptoDown' src={webdevelopment} />
                     <Image alt='' className='h-30 w-12 uptoDown  absolute top-[60%] right-[15%]' src={energy} />
                     <Image alt='' className='h-30 w-20 uptoDown opacity-30  absolute top-[68%] right-[14%]' src={energy1} />
 
