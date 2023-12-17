@@ -12,6 +12,8 @@ import software from '../../assets/Youthminds service name icon/software-develop
 import graphics from '../../assets/Youthminds service name icon/graphic-design.png'
 import energy from '../../assets/Youthminds service name icon/energy-sources.png'
 import web from '../../assets/Youthminds service name icon/website-codes.png'
+import cpu from '../../assets/Youthminds service name icon/cpu.png'
+import vector from '../../assets/Youthminds service name icon/vector.png'
 
 import cyber1 from '../../assets/service/cyber.png'
 import digital1 from '../../assets/service/Digital.png'
@@ -19,6 +21,7 @@ import graphics1 from '../../assets/service/graphics.png'
 import energy1 from '../../assets/service/renewable.png'
 import software1 from '../../assets/service/software.png'
 import hardware from '../../assets/service/hardware.png'
+import websolution from '../../assets/Youthminds service name icon/web.png'
 
 
 
@@ -49,6 +52,11 @@ const Header = () => {
 
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[10%] top-[20%]' src={cyber} />
                     <Image alt='' className='h-30 w-20 opacity-25  absolute left-[8%] top-[30%]' src={cyber1} />
+
+                    <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[18%] top-[2%]' src={cpu} />
+                    <Image alt='' className='h-30 w-20  absolute left-[18%] opacity-30 top-[12%]' src={hardware} />
+                    <Image alt='' className='h-30 w-12 zoom-in-out absolute top-[2%] right-[18%]' src={vector} />
+
                     <Image alt='' className='h-30 w-12  absolute left-[20%] -bottom-5 slideRighttoLeft' src={digital} />
                     <Image alt='' className='h-35 w-20  absolute left-[20%] -bottom-9 slideRighttoLeft opacity-30' src={digital1} />
 
@@ -56,9 +64,9 @@ const Header = () => {
                     <Image alt='' className='absolute right-[15%] left-to-right  h-30 w-20 -bottom-10 opacity-30' src={graphics1} />
 
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute top-[20%] right-[10%]' src={software} />
-                    <Image alt='' className='h-30 w-20 opacity-30 absolute top-[30%] right-[10%]' src={hardware} />
+                    <Image alt='' className='h-30 w-20 opacity-30 absolute top-[30%] right-[10%]' src={software1} />
                     <Image alt='' className='absolute   h-30 w-12 top-[60%] left-[15%] uptoDown' src={web} />
-                    <Image alt='' className='absolute   h-30 w-20 opacity-30 top-[68%] left-[15%] uptoDown' src={software1} />
+                    <Image alt='' className='absolute   h-30 w-20 opacity-30 top-[68%] left-[15%] uptoDown' src={websolution} />
                     <Image alt='' className='h-30 w-12 uptoDown  absolute top-[60%] right-[15%]' src={energy} />
                     <Image alt='' className='h-30 w-20 uptoDown opacity-30  absolute top-[68%] right-[14%]' src={energy1} />
 
