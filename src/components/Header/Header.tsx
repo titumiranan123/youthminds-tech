@@ -19,17 +19,17 @@ const Header = () => {
         <div className='relative mb-48 -z-10 '>
             <div className='bg-[#000724] h-[810px]'>
                 <div className=' relative  md:pt-10  pb-10 flex justify-center items-center    bg-[#000724] text-white lg:p-8 p-4'>
-                    <div data-aos="zoom-in" className=' lg:w-[50%] md:w-full mx-auto lg:mt-0  absolute lg:-top-4 lg:left-[26%] top-10 lg:opacity-30 opacity-100'>
+                    <div data-aos="zoom-in" className=' lg:w-[50%] w-full mx-auto lg:mt-0  absolute lg:-top-4 lg:left-[26%] top-10 lg:opacity-30 opacity-100'>
                         <div className='md:relative'>
-                            <Image className='img-fluid  -mt-4 md:h-72 md:w-72  lg:absolute md:absolute  lg:right-[28%] md:right-[35.9%] md:top-[1rem] lg:top-[4rem]' src={brain} alt='' />
-                            <Image className='img-fluid spinner absolute lg:right-[23%] md:right-[31%] md:-top-[1rem] lg:top-[2.4rem] md:h-[21rem] md:w-[21rem] top-10  right-[5.4rem] ' src={headerImg} alt='' />
+                            <Image className='img-fluid  -mt-4 md:h-72 md:w-72  lg:absolute md:absolute  lg:right-[28%] md:right-[35.9%] md:top-[1rem] lg:top-[4rem] h-[15rem] w-[15rem] lg:ms-0 md:ms-0 ms-[69px]' src={brain} alt='' />
+                            <Image className='img-fluid spinner absolute lg:right-[23%] md:right-[31%] md:-top-[1rem] lg:top-[2.4rem] md:h-[21rem] md:w-[21rem] -top-2 h-[17rem] w-[17rem]   right-[5rem] ' src={headerImg} alt='' />
                         </div>
                     </div>
 
-                    <div className=' z-10 h-full  flex flex-col justify-center gap-5 items-center mt-72 lg:ms-8 md:me-16'>
+                    <div className=' z-10 h-full  flex flex-col justify-center md:gap-5 gap-4 items-center mt-72 lg:ms-8 md:me-16'>
                         <div data-aos="fade-down  flex justify-center ">
-                            <h2 className='lg:text-5xl md:text-4xl font-bold text-5xl   leading-10 text-center'>
-                                Empowering <span className='text-orange-500 leading-10'>
+                            <h2 className='lg:text-5xl md:text-4xl font-bold text-3xl   md:leading-10 text-center'>
+                                Empowering <span className='text-orange-500 md:leading-10'>
                                     Digital Excellence ,</span> <br /> One Solution at a Time.
                             </h2>
                             <p className='lg:w-2/4 md:w-3/4 mx-auto  text-slate-400 mt-4 text-center '> Empowering success through cutting-edge IT solutions. From brand design to cybersecurity, we&apos;re your dedicated partner in the digital era, crafting tailored solutions for your triumph.</p>
