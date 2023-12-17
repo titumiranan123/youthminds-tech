@@ -13,6 +13,14 @@ import graphics from '../../assets/Youthminds service name icon/graphic-design.p
 import energy from '../../assets/Youthminds service name icon/energy-sources.png'
 import web from '../../assets/Youthminds service name icon/website-codes.png'
 
+import cyber1 from '../../assets/service/cyber.png'
+import digital1 from '../../assets/service/Digital.png'
+import graphics1 from '../../assets/service/graphics.png'
+import energy1 from '../../assets/service/renewable.png'
+import software1 from '../../assets/service/software.png'
+import hardware from '../../assets/service/hardware.png'
+
+
 
 const Header = () => {
     return (
@@ -40,11 +48,19 @@ const Header = () => {
 
 
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[10%] top-[20%]' src={cyber} />
-                    <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[20%] -bottom-5 slideRighttoLeft' src={digital} />
-                    <Image alt='' className='absolute right-[20%] left-to-right h-30 w-12 -bottom-5' src={graphics} />
+                    <Image alt='' className='h-30 w-20 opacity-25  absolute left-[8%] top-[30%]' src={cyber1} />
+                    <Image alt='' className='h-30 w-12  absolute left-[20%] -bottom-5 slideRighttoLeft' src={digital} />
+                    <Image alt='' className='h-35 w-20  absolute left-[20%] -bottom-9 slideRighttoLeft opacity-30' src={digital1} />
+
+                    <Image alt='' className='absolute right-[20%] left-to-right  h-30 w-12 -bottom-5' src={graphics} />
+                    <Image alt='' className='absolute right-[15%] left-to-right  h-30 w-20 -bottom-10 opacity-30' src={graphics1} />
+
                     <Image alt='' className='h-30 w-12 zoom-in-out absolute top-[20%] right-[10%]' src={software} />
+                    <Image alt='' className='h-30 w-20 opacity-30 absolute top-[30%] right-[10%]' src={hardware} />
                     <Image alt='' className='absolute   h-30 w-12 top-[60%] left-[15%] uptoDown' src={web} />
-                    <Image alt='' className='h-30 w-12 uptoDown absolute top-[60%] right-[15%]' src={energy} />
+                    <Image alt='' className='absolute   h-30 w-20 opacity-30 top-[68%] left-[15%] uptoDown' src={software1} />
+                    <Image alt='' className='h-30 w-12 uptoDown  absolute top-[60%] right-[15%]' src={energy} />
+                    <Image alt='' className='h-30 w-20 uptoDown opacity-30  absolute top-[68%] right-[14%]' src={energy1} />
 
 
 
@@ -52,6 +68,17 @@ const Header = () => {
                 </div>
 
             </div>
+
+
+            <div className='hidden  opacity-30'>
+                <Image className='absolute opacity-30 top-[10%] right-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
+                <Image className='absolute opacity-30 top-[14%] right-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
+                <Image className='absolute opacity-30 top-[18%] right-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
+                <Image className='absolute opacity-30 top-[10%] left-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
+                <Image className='absolute opacity-30 top-[14%] left-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
+                <Image className='absolute opacity-30 top-[18%] left-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
+            </div>
+
 
             <div className='md:mt-12 lg:absolute lg:-bottom-40 lg:left-[4%] md:absolute md:-bottom-40  bg-opacity-30 -mt-36 '>
                 <div className='grid    p-10 lg:grid-cols-3  md:grid-cols-3 grid-cols-1 mt-10  gap-4'>
