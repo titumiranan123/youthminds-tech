@@ -32,7 +32,7 @@ const Navbar: React.FC<navProp> = ({ className }) => {
         return (
             <Link href={href}>
                 <span className={` 'text-[16px]', 'font-["Open Sans"]', 'navfont', 'animationNav', {
-            'text-[#EC7D21] text-[18px] className ${isActive && 'text-bold text-orange-500'}`}>
+            'text-[#EC7D21] text-[18px] ${className} ${isActive && 'text-bold text-orange-500'}`}>
                     {navItem}
                 </span>
             </Link>
@@ -108,10 +108,10 @@ const Navbar: React.FC<navProp> = ({ className }) => {
                         }
                     </motion.div>
                     <div className='justify-center items-center   flex  flex-col gap-5 lg:hidden z-50 mt-20  '>
-                        <CustomLink href='/' navItem='Home' className={`hover:text-white ${router == '/' && 'text-black text-[18px] font-bold'}`} />
-                        <CustomLink className={`hover:text-white ${router == 'about-us' && 'text-black text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
-                        <CustomLink className={`hover:text-white ${router == 'Services' && 'text-black text-[18px] font-bold'}`} href='/services' navItem='Services' />
-                        <CustomLink href='/contact-us' navItem='Contact Us' className={`hover:text-white ${router == 'contact-us' && 'text-black text-[18px] font-bold'}`} />
+                        <CustomLink href='/' navItem='Home' className={`hover:text-white text-black ${router == '/' && 'text-white text-[18px] font-bold'}`} />
+                        <CustomLink className={`hover:text-white text-black ${router == 'about-us' && 'text-white text-[18px] font-bold'}`} href='/about-us' navItem='About Us' />
+                        <CustomLink className={`hover:text-white text-black ${router == 'Services' && 'text-white text-[18px] font-bold'}`} href='/services' navItem='Services' />
+                        <CustomLink href='/contact-us' navItem='Contact Us' className={`hover:text-white text-black ${router == 'contact-us' && 'text-white text-[18px] font-bold'}`} />
                         <br />
 
                         <div className='flex justify-center items-center gap-4 z-50'>
