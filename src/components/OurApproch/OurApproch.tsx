@@ -1,40 +1,37 @@
 'use client'
 import Image from 'next/image';
 import approch from '../../assets/why-you-choose-img.png'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper/modules';
+
 
 
 const OurApproch = () => {
     return (
-        <div className='mt-12 lg:p-10 p-4 bg-orange-200 bg-opacity-50'>
-            <div className='saria flex flex-col  justify-center items-center '>
-                <h2 className=' font-bold saria text-4xl text-center text-orange-500 uppercase'>Why  Chosse us</h2>
-                <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
-            </div>
-            <div className='mt-10 grid grid-cols-2   justify-around items-center   lg:flex-nowrap flex-wrap  '>
-                <Image className='img-fluid flex justify-center items-center ms-10 lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
+        <div className=' bg-orange-200 bg-opacity-50'>
+            <div className='mt-12 lg:p-10 p-4 mx-auto max-w-[1440px]  bg-opacity-50'>
+                <div className='saria flex flex-col  justify-center items-center '>
+                    <h2 className=' font-bold saria text-4xl text-center text-orange-500 uppercase'>Why  Chosse us</h2>
+                    <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
+                </div>
+                <div className='mt-10 grid grid-cols-2   justify-around items-center   lg:flex-nowrap flex-wrap  '>
+                    <Image className='img-fluid flex justify-center items-center  lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
+                    <section className="-mt-10 me-16 ">
 
-                <section className="-mt-10 me-16 ">
-
-                    <ul className='grid grid-cols-2 lg:grid-cols-2 gap-2'>
-                        {
-                            features.map((feature, index) => (
-                                <li
-                                    className="list-none btn saria py-4 px-6 bg-orange-400 hover:bg-orange-500 border rounded-bl-3xl rounded-tr-3xl text-lg font-semibold hover:text-white text-center"
-                                    key={index}
-                                >
-                                    {feature.title} {/* Sort the title */}
-                                </li>
-                            ))
-                        }
-                    </ul>
-                </section>
-            </div>
-        </div >
+                        <ul className='grid grid-cols-2 lg:grid-cols-2 gap-2'>
+                            {
+                                features.map((feature, index) => (
+                                    <li
+                                        className="list-none btn saria py-4 px-6 bg-orange-400 hover:bg-orange-500 border rounded-bl-3xl rounded-tr-3xl text-lg font-semibold hover:text-white text-center"
+                                        key={index}
+                                    >
+                                        {feature.title} {/* Sort the title */}
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </section>
+                </div>
+            </div >
+        </div>
     );
 };
 const features = [
