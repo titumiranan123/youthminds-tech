@@ -12,7 +12,7 @@ const Servicescard: React.FC<proptype> = ({ logo, heading, description }) => {
     const [Read, setRead] = useState<boolean>(true);
 
     return (
-        <div className={`flex flex-col gap-10 shadow-lg p-7 border hover:border-orange-500 rounded-3xl ${!Read ? 'h-[35rem]' : 'h-[27rem]'} relative`}>
+        <div className={`flex flex-col gap-10 shadow-lg p-7 border hover:border-orange-500 rounded-3xl ${!Read ? 'h-[36rem]' : 'h-[29rem]'} relative`}>
             <Image alt='' src={logo} />
             <div className='space-y-3'>
                 <h2 className='saria font-semibold text-2xl text-left'>{heading}</h2>

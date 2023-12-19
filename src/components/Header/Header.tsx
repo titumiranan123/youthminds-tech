@@ -29,17 +29,17 @@ import websolution from '../../assets/Youthminds service name icon/web.png'
 
 const Header = () => {
     return (
-        <div className='relative mb-48 -z-10 '>
-            <div className='bg-[#000724] h-[810px]'>
+        <div className='relative mb-48  -z-10 '>
+            <div className='bg-[#000724] h-[820px]'>
                 <div className=' relative  md:pt-10  pb-10 flex justify-center items-center    bg-[#000724] text-white lg:p-8 p-4'>
-                    <div data-aos="zoom-in" className=' lg:w-[50%] w-full mx-auto lg:mt-0  absolute lg:-top-4 lg:left-[22%] top-10 lg:opacity-30 opacity-100'>
+                    <div data-aos="zoom-in" className=' lg:w-[50%] w-full mx-auto lg:mt-0  absolute lg:-top-4 lg:left-[22%] top-10 lg:opacity-30 opacity-100 z-20'>
                         <div className='md:relative'>
-                            <Image className='img-fluid  -mt-4 md:h-72 md:w-72  lg:absolute md:absolute  lg:right-[28%] md:right-[35.9%] md:top-[1rem] lg:top-[4rem] h-[15rem] w-[15rem] lg:ms-0 md:ms-0 ms-[69px]' src={brain} alt='' />
-                            <Image className='img-fluid spinner absolute lg:right-[23%] md:right-[31%] md:-top-[1rem] lg:top-[2.4rem] md:h-[21rem] md:w-[21rem] -top-2 h-[17rem] w-[17rem]   right-[5rem] ' src={headerImg} alt='' />
+                            <Image className='img-fluid  -mt-4 md:h-72 md:w-72  lg:absolute md:absolute  lg:right-[28%] md:right-[35.9%] md:top-[1rem] lg:top-[4rem] h-[15rem] w-[15rem] lg:ms-0 md:ms-0 ms-[66px]' src={brain} alt='' />
+                            <Image className='img-fluid spinner absolute lg:right-[23%] md:right-[31%] md:-top-[1rem] lg:top-[2.4rem] md:h-[21rem] md:w-[21rem] -top-5 h-[17rem] w-[17rem]   right-[2rem] ' src={headerImg} alt='' />
                         </div>
                     </div>
 
-                    <div className=' z-10 h-full  flex flex-col justify-center items-center ms-4  md:gap-5 gap-4  mt-72 lg:ms-10 md:me-16'>
+                    <div className=' z-20 h-full  flex flex-col justify-center items-center ms-4  md:gap-5 gap-4  mt-72 lg:ms-10 md:me-16 '>
                         <div data-aos="fade-down">
                             <h2 className='lg:text-5xl md:text-4xl font-bold text-2xl   md:leading-10 text-center'>
                                 Empowering <span className='text-orange-500 md:leading-10'>
@@ -52,26 +52,26 @@ const Header = () => {
                     {/* heeho */}
 
 
-                    <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[10%] top-[20%]' src={cyber} />
-                    <Image alt='' className='h-30 w-20 opacity-25  absolute left-[8%] top-[30%]' src={cyber1} />
+                    <Image alt='' className='h-30 z-10 w-12 zoom-in-out absolute left-[10%] top-[20%]' src={cyber} />
+                    <Image alt='' className='h-30 z-10 w-20 opacity-25  absolute left-[8%] top-[30%]' src={cyber1} />
 
-                    <Image alt='' className='h-30 w-12 zoom-in-out absolute left-[18%] top-[2%]' src={cpu} />
-                    <Image alt='' className='h-30 w-20  absolute left-[18%] opacity-30 top-[12%]' src={hardware} />
-                    <Image alt='' className='h-30 w-12 zoom-in-out absolute top-[2%] right-[18%]' src={vector} />
-                    <Image alt='' className='h-30 w-20 opacity-30 absolute top-[12%] right-[18%]' src={graphics1} />
+                    <Image alt='' className='h-30 z-10 w-12 zoom-in-out absolute left-[18%] top-[2%]' src={cpu} />
+                    <Image alt='' className='h-30 z-10 w-20  absolute left-[18%] opacity-30 top-[12%]' src={hardware} />
+                    <Image alt='' className='h-30 z-10 w-12 zoom-in-out absolute top-[2%] right-[18%]' src={vector} />
+                    <Image alt='' className='h-30 z-10 w-20 opacity-30 absolute top-[12%] right-[18%]' src={graphics1} />
 
-                    <Image alt='' className='h-30 w-12  absolute left-[20%] -bottom-5 slideRighttoLeft' src={digital} />
+                    <Image alt='' className='h-30 z-10 w-12  absolute left-[20%] -bottom-5 slideRighttoLeft' src={digital} />
                     <Image alt='' className='h-35 w-20  absolute left-[20%] -bottom-9 slideRighttoLeft opacity-30' src={digital1} />
 
-                    <Image alt='' className='absolute right-[20%] left-to-right  h-30 w-12 -bottom-5' src={graphics} />
-                    <Image alt='' className='absolute right-[15%] left-to-right  h-30 w-20 -bottom-10 opacity-30' src={webdesing} />
+                    <Image alt='' className='absolute right-[20%] left-to-right  h-30 z-10 w-12 -bottom-5' src={graphics} />
+                    <Image alt='' className='absolute right-[15%] left-to-right  h-30 z-10 w-20 -bottom-10 opacity-30' src={webdesing} />
 
-                    <Image alt='' className='h-30 w-12 zoom-in-out absolute top-[20%] right-[10%]' src={software} />
-                    <Image alt='' className='h-30 w-20 opacity-30 absolute top-[30%] right-[10%]' src={software1} />
-                    <Image alt='' className='absolute   h-30 w-12 top-[60%] left-[15%] uptoDown' src={web} />
-                    <Image alt='' className='absolute   h-30 w-20 opacity-30 top-[68%] left-[15%] uptoDown' src={webdevelopment} />
-                    <Image alt='' className='h-30 w-12 uptoDown  absolute top-[60%] right-[15%]' src={energy} />
-                    <Image alt='' className='h-30 w-20 uptoDown opacity-30  absolute top-[68%] right-[14%]' src={energy1} />
+                    <Image alt='' className='h-30 z-10 w-12 zoom-in-out absolute top-[20%] right-[10%]' src={software} />
+                    <Image alt='' className='h-30 z-10 w-20 opacity-30 absolute top-[30%] right-[10%]' src={software1} />
+                    <Image alt='' className='absolute   h-30 z-10 w-12 top-[60%] left-[15%] uptoDown' src={web} />
+                    <Image alt='' className='absolute   h-30 z-10 w-20 opacity-30 top-[68%] left-[15%] uptoDown' src={webdevelopment} />
+                    <Image alt='' className='h-30 z-10 w-12 uptoDown  absolute top-[60%] right-[15%]' src={energy} />
+                    <Image alt='' className='h-30 z-10 w-20 uptoDown opacity-30  absolute top-[68%] right-[14%]' src={energy1} />
 
 
 
@@ -81,14 +81,7 @@ const Header = () => {
             </div>
 
 
-            <div className='hidden  opacity-30'>
-                <Image className='absolute opacity-30 top-[10%] right-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
-                <Image className='absolute opacity-30 top-[14%] right-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
-                <Image className='absolute opacity-30 top-[18%] right-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
-                <Image className='absolute opacity-30 top-[10%] left-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
-                <Image className='absolute opacity-30 top-[14%] left-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
-                <Image className='absolute opacity-30 top-[18%] left-[20%] img-fluid  w-40 h-20' src={cyber1} alt='' />
-            </div>
+
 
 
             <div className='md:mt-12 lg:absolute lg:-bottom-40 lg:left-[9.5%] md:absolute md:-bottom-40  bg-opacity-30 -mt-36 '>

@@ -66,7 +66,7 @@ const services = [
 ]
 const Services = () => {
     return (
-        <div className='mt-12 max-w-[1440px] mx-auto'>
+        <div className='mt-12 p-4 max-w-[1440px] mx-auto'>
             <div className='saria flex flex-col justify-center items-center '>
                 <h2 className='mt-10 font-semibold saria text-4xl text-center text-orange-500'>SOLUTION WE OFFER</h2>
                 <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Revolution with Diligence Service</p>

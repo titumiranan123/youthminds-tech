@@ -57,7 +57,7 @@ const reviews = [
 ];
 const Testimonial = () => {
     return (
-        <div className='mt-12 max-w-[1440px] mx-auto'>
+        <div className='mt-12 max-w-[1440px] mx-auto p-4'>
             <div className='saria flex flex-col justify-center items-center '>
                 <h2 className=' font-bold saria text-4xl text-center text-orange-500'>TESTIMONIALS</h2>
                 <p className='text-center text-lg w-3/5 mt-4 text-slate-600'>Services are professional offerings provided by businesses to meet specific needs or solve problems for their customers. Services can range from your budget.</p>
