@@ -11,7 +11,7 @@ type proptype = {
 
 const Servicescard: React.FC<proptype> = ({ logo, heading, description }) => {
     const [Read, setRead] = useState<boolean>(true);
-    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [isOpen, setIsOpen] = useState(false);
 
     const openModal = () => {
         setIsOpen(true);
@@ -20,6 +20,7 @@ const Servicescard: React.FC<proptype> = ({ logo, heading, description }) => {
     const closeModal = () => {
         setIsOpen(false);
     };
+
     return (
         <div className={`flex flex-col gap-10 shadow-lg p-7 border hover:border-orange-500 rounded-3xl ${!Read ? 'h-[35rem]' : 'h-[27rem]'} relative`}>
             <Image alt='' src={logo} />
@@ -41,6 +42,7 @@ const Servicescard: React.FC<proptype> = ({ logo, heading, description }) => {
                     </div>
                 </div>
             )}
+
         </div>
     );
 };
