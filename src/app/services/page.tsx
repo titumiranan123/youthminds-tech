@@ -13,11 +13,11 @@ import Servicescard from '@/components/modal/Service'
 
 const Services: React.FC = () => {
     return (
-        <div className='-z-10'>
+        <div className='-z-10 '>
 
             <Navbar className='bg-white' />
             <div className='text-center flex justify-center items-center text-4xl font-bold text-black bg-[#EC7D21] bg-opacity-20 h-56'><p>Our Services </p></div>
-            <div className='servicers '>
+            <div className='servicers max-w-[1440px] mx-auto'>
                 <div className='mt-10 grid gap-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 '>
 
                     {services.map((service, indx) => <Servicescard key={indx} logo={service.svg} heading={service.title} description={service.description} />)}

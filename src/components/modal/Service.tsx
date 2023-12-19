@@ -18,7 +18,7 @@ const Servicescard: React.FC<proptype> = ({ logo, heading, description }) => {
                 <h2 className='saria font-semibold text-2xl text-left'>{heading}</h2>
                 <p className='text-left'>{Read ? <>{description.slice(0, 200)}......</> : <>{description}</>}<span onClick={() => setRead(!Read)} className='text-orange-400 underline cursor-pointer'>{Read ? <>Read More</> : <>    Read Less</>}<span /></span></p>
             </div>
-            <button onClick={() => document.getElementById('my_modal_5').showModal()} className="btn saria py-4 px-6 absolute bottom-6 bg-orange-400 hover:bg-orange-500 w-1/2 border rounded-bl-3xl rounded-tr-3xl text-lg font-semibold hover:text-white ">Learn More</button>
+            <button onClick={() => document.getElementById('my_modal_5').showModal()} className=" saria py-4 px-6 absolute bottom-6 bg-orange-400 hover:bg-orange-500 w-1/2 border rounded-bl-3xl rounded-tr-3xl text-lg font-semibold hover:text-white ">Learn More</button>
             <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                     <h3 className="font-bold text-lg">Hello!</h3>
