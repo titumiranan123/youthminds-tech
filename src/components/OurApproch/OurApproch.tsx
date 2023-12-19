@@ -12,9 +12,9 @@ const OurApproch = () => {
                     <h2 className=' font-bold saria text-4xl text-center text-orange-500 uppercase'>Why  Chosse us</h2>
                     <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
                 </div>
-                <div className='mt-10 grid grid-cols-2   justify-around items-center   lg:flex-nowrap flex-wrap  '>
+                <div className='mt-10 flex  gap-10 md:gap-5 justify-around items-center   lg:flex-nowrap flex-wrap  '>
                     <Image className='img-fluid flex justify-center items-center  lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
-                    <section className="-mt-10 me-16 ">
+                    <section className="lg:-mt-10 lg:me-16 ">
 
                         <ul className='grid grid-cols-2 lg:grid-cols-2 gap-2'>
                             {
