@@ -15,50 +15,16 @@ const OurApproch = () => {
                 <h2 className=' font-bold saria text-4xl text-center text-orange-500 uppercase'>Why  Chosse us</h2>
                 <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Picture this – captivating designs that speak volumes, websites that are as user-friendly as they are stunning, software solutions that simplify your operations, and marketing strategies that put your brand in the spotlight.</p>
             </div>
-            <div className='mt-10 flex   justify-around items-center  gap-10 lg:flex-nowrap flex-wrap  '>
-                <Image className='img-fluid lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
+            <div className='mt-10 grid grid-cols-2   justify-around items-center   lg:flex-nowrap flex-wrap  '>
+                <Image className='img-fluid flex justify-center items-center ms-10 lg:h-[500px] lg:w-[550px]' src={approch} alt='' />
 
-                <section className="-mt-10  ">
-                    {/* <Swiper
-                        slidesPerView={1}
-                        spaceBetween={10}
-                        loop={true}
-                        pagination={{
-                            clickable: true,
-                        }}
+                <section className="-mt-10 me-16 ">
 
-                        modules={[Pagination]}
-                        breakpoints={{
-                            640: {
-                                slidesPerView: 1,
-                                spaceBetween: 20,
-                            },
-                            768: {
-                                slidesPerView: 1,
-                                spaceBetween: 40,
-                            },
-                            1024: {
-                                slidesPerView: 2,
-                                spaceBetween: 50,
-                            },
-                        }}
-                        className="mySwiper"
-                    >
-                        {features.map((feature, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="lg:p-8 h-[26rem] p-4 rounded-lg shadow-md ">
-                                    <h3 className="text-xl font-semibold mb-4">{feature.title}</h3>
-                                    <p className="text-gray-700">{feature.description}</p>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-
-                    </Swiper> */}
-                    <ul className='grid grid-cols-2 gap-2'>
+                    <ul className='grid grid-cols-2 lg:grid-cols-2 gap-2'>
                         {
                             features.map((feature, index) => (
                                 <li
-                                    className="list-none btn saria py-4 px-6 bg-orange-400 hover:bg-orange-500 border rounded-bl-3xl rounded-tr-3xl text-lg font-semibold hover:text-white"
+                                    className="list-none btn saria py-4 px-6 bg-orange-400 hover:bg-orange-500 border rounded-bl-3xl rounded-tr-3xl text-lg font-semibold hover:text-white text-center"
                                     key={index}
                                 >
                                     {feature.title} {/* Sort the title */}

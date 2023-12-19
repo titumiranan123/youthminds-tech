@@ -52,6 +52,12 @@ const services = [
         "svg": svg2,
     },
     {
+        "title": "Cyber Security",
+        "description": "Your digital safety is our mission. We're not just defenders; we're your partners in creating a secure online environment. From threat detection to proactive defense, we’re dedicated to providing cyber security solutions that keep your data and peace of mind intact. Our customer-friendly approach means more than just protective measures; it's about creating a shield that adapts to your unique needs. Let’s secure your digital space together! #CyberSecuritySpecialist #CyberSecuritySimplified",
+        "tags": "#CyberSecuritySpecialist #CyberSecuritySimplified",
+        "svg": svg3
+    },
+    {
         "title": "Hardware Solution",
         "description": "Need a reliable partner for your hardware needs? Look no further! Our customer-friendly approach means more than just solutions; it's about creating a hardware experience that seamlessly aligns with your goals. We're not just about components and setups; we're your partners in creating a smooth and reliable hardware experience. Let’s collaborate to bring efficiency, innovation, and a touch of user-friendly magic to your technology landscape! ",
         "tags": "#HardwareSolutions #HardwareInnovation",
