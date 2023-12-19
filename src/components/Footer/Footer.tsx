@@ -8,13 +8,14 @@ import { motion } from 'framer-motion'
 import { BsFacebook } from 'react-icons/bs';
 const Footer = () => {
     return (
-        <div className='footer bg-orange-500 bg-opacity-50  mt-12  '>
-
-            <div className=' text-slate-700  bg-opacity-20 pt-8 px-5 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-2'>
+        <div className='bg-orange-500 bg-opacity-50'>
+            <div className='footer   mt-12 max-w-[1440px] mx-auto'>
+            <div className=' text-slate-700  bg-opacity-20 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 pt-6'>
+                <div className='lg:w-96  '>
                 <div>
                     <Image className='w-60 h-20 rounded-lg img-fluid' src={logo} alt='' />
                     <p className='mt-2'>Welcome to our website Information <br /> and Technology Company</p>
-                    <hr className='border-r-gray-500 h-2 mt-2' />
+                    <hr className='border-r-gray-500 lg:w-3/4 h-2 mt-2' />
                     <div className='flex  items-center gap-4'>
                         <motion.li className='list-none duration-100 text-black mt-2'
                             whileHover={{ scale: 1.1, y: -3 }}
@@ -34,12 +35,12 @@ const Footer = () => {
                         >
                             <GrLinkedin className='text-2xl text-black mt-2' />
                         </motion.li>
-
-
                     </div>
 
                 </div>
-                <div className='space-y-2 flex  items-center flex-col'>
+                </div>
+                <div className='lg:w-96  '>
+                <div className='space-y-2 '>
                     <p className='text-xl font-semibold'>Explore</p>
                     <div className='flex flex-col gap-3 '>
                         <motion.li className='list-none '
@@ -50,6 +51,8 @@ const Footer = () => {
                         <Link href='/contact'> Contact</Link>
                     </div>
                 </div>
+                </div>
+                <div className='lg:w-96  '>
                 <div className='space-y-4 '>
                     <h2 className='text-xl font-semibold'>Contact </h2>
                     <div className='space-y-2'>
@@ -58,6 +61,9 @@ const Footer = () => {
                         <a className='text-orange-500 underline' href="mailto:youthmindstech@gmail.com">youthmindstech@gmail.com</a>
                     </div>
                 </div>
+                </div>
+                <div className='lg:w-96 '>
+
                 <div>
                     <h2 className='text-xl font-semibold'>Sign up for newsletter </h2>
                     <div className=''>
@@ -69,9 +75,12 @@ const Footer = () => {
                         </form>
                     </div>
                 </div>
+                </div>
             </div>
-            <div className='bg-orange-500 w-full p-2 text-center'>
-                <p className='text-white'>&copy; Copyright 2023 by  <a href="#" className='hover:text-slate-600  underline'>Youthminds Tech</a> </p>
+            
+        </div>
+        <div className='bg-orange-500 w-full p-2 text-center flex justify-center items-center'>
+                <p className='text-white text-center'>&copy; Copyright 2023 by  <a href="#" className='hover:text-slate-600  underline'>Youthminds Tech</a> </p>
             </div>
         </div>
     );

@@ -32,15 +32,15 @@ const Header = () => {
         <div className='relative mb-48 -z-10 '>
             <div className='bg-[#000724] h-[810px]'>
                 <div className=' relative  md:pt-10  pb-10 flex justify-center items-center    bg-[#000724] text-white lg:p-8 p-4'>
-                    <div data-aos="zoom-in" className=' lg:w-[50%] w-full mx-auto lg:mt-0  absolute lg:-top-4 lg:left-[26%] top-10 lg:opacity-30 opacity-100'>
+                    <div data-aos="zoom-in" className=' lg:w-[50%] w-full mx-auto lg:mt-0  absolute lg:-top-4 lg:left-[22%] top-10 lg:opacity-30 opacity-100'>
                         <div className='md:relative'>
                             <Image className='img-fluid  -mt-4 md:h-72 md:w-72  lg:absolute md:absolute  lg:right-[28%] md:right-[35.9%] md:top-[1rem] lg:top-[4rem] h-[15rem] w-[15rem] lg:ms-0 md:ms-0 ms-[69px]' src={brain} alt='' />
                             <Image className='img-fluid spinner absolute lg:right-[23%] md:right-[31%] md:-top-[1rem] lg:top-[2.4rem] md:h-[21rem] md:w-[21rem] -top-2 h-[17rem] w-[17rem]   right-[5rem] ' src={headerImg} alt='' />
                         </div>
                     </div>
 
-                    <div className=' z-10 h-full  flex flex-col justify-center md:gap-5 gap-4 items-center mt-72 lg:ms-10 md:me-16'>
-                        <div data-aos="fade-down  flex justify-center ">
+                    <div className=' z-10 h-full  flex flex-col justify-center items-center ms-4  md:gap-5 gap-4  mt-72 lg:ms-10 md:me-16'>
+                        <div data-aos="fade-down">
                             <h2 className='lg:text-5xl md:text-4xl font-bold text-2xl   md:leading-10 text-center'>
                                 Empowering <span className='text-orange-500 md:leading-10'>
                                     Digital Excellence ,</span> <br /> One Solution at a Time.
@@ -91,7 +91,7 @@ const Header = () => {
             </div>
 
 
-            <div className='md:mt-12 lg:absolute lg:-bottom-40 lg:left-[4%] md:absolute md:-bottom-40  bg-opacity-30 -mt-36 '>
+            <div className='md:mt-12 lg:absolute lg:-bottom-40 lg:left-[9.5%] md:absolute md:-bottom-40  bg-opacity-30 -mt-36 '>
                 <div className='grid    p-10 lg:grid-cols-3  md:grid-cols-3 grid-cols-1 mt-10  gap-4'>
                     <Statecard logo={project} amount={12} heading=' Porjects' title='Working With Passion' />
                     <Statecard logo={customer} amount={12} heading=' Customers' title='Working With Passion' />

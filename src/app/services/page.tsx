@@ -7,12 +7,14 @@ import svg4 from '../../assets/digital marketing.svg'
 import svg5 from '../../assets/hardware.svg'
 import Navbar from '@/components/Navbar/Navbar';
 import React from 'react';
-import Servicescard from '@/components/service/Servicescard';
+
 import Footer from '@/components/Footer/Footer'
+import Servicescard from '@/components/modal/Service'
 
 const Services: React.FC = () => {
     return (
         <div className='-z-10'>
+
             <Navbar className='bg-white' />
             <div className='text-center flex justify-center items-center text-4xl font-bold text-black bg-[#EC7D21] bg-opacity-20 h-56'><p>Our Services </p></div>
             <div className='servicers '>

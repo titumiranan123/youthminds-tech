@@ -5,7 +5,7 @@ import { useState } from 'react';
 const About = () => {
     const [Read, setRead] = useState<boolean>(true);
     return (
-        <div className='md:mt-24 -mt-44 p-4 '>
+        <div className='md:mt-24 -mt-44 p-4 max-w-[1440px] mx-auto'>
             <h2 data-aos="fade-in" data-duration='1000' className='text-4xl font-semibold text-center md:mb-0 mb-6 text-orange-500 '>ABOUT US</h2>
             <div className='flex lg:-mt-5 flex-wrap justify-center  items-center lg:flex-nowrap'>
                 <div data-aos="fade-up" data-duration='1200' className='lg:w-1/2   md:mb-10  space-y-2'>

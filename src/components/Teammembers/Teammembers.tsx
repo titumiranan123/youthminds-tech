@@ -24,7 +24,7 @@ const teamMembers = [
 const Teammembers = () => {
 
     return (
-        <div className='space-y-5 mt-12  '>
+        <div className='space-y-5 mt-12 max-w-[1440px] mx-auto '>
             <div className='saria flex flex-col  justify-center items-center mb-10'>
                 <h2 className='mt-10 font-bold saria text-4xl text-center  text-orange-500'>TEAM MEMBERS </h2>
                 <p className='text-center text-lg w-3/4 mt-5 text-slate-600'>Services are professional offerings provided by businesses to meet specific needs or solve problems for their customers. Services can range from your budget.</p>
